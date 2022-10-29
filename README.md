@@ -1,4 +1,4 @@
-![](https://github.com/itcvideogames/itcvideogames/blob/main/itcsite-github-banner.png)
+![](https://github.com/itcvideogames/itcvideogames.github.io/blob/main/itcsite-github-banner.png)
 
   
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Montserrat&size=25&duration=3500&pause=2000&color=D00808&background=FF000000&width=650&lines=This+is+website+about+my+games%2C+news%2C+etc.)](https://git.io/typing-svg)
