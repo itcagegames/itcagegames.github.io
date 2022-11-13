@@ -13,7 +13,7 @@
         <title>Inside The Cage Games</title>
         <meta name="viewport"
          content="width=device-width, initial-scale=1">
-         <style>html{
+        <style>html{
         scroll-behavior: smooth;
     }</style>
     </head>
@@ -34,64 +34,54 @@
         </script>
 
         <header class="header">
-            <div class="wrapper">
+            <div class="container">
 
                 <div class="header-wrapper">
                     <div class="header-logo">
 
                         <img src="headerlogo.png" alt="Приветствую! Это Inside The Cage Игровой разработчик и издатель" class="header-logo-img" width="77" height="74">
-
                     </div>
 
                     <nav class="header-nav">
-                        <ul class="header-list">
-                            <li class="header-item">
-                                <a href="#intro" class="header-link">НАЧАЛО</a>
-                            </li>
-                            <li class="header-item">
-                            <a href="#info" class="header-link">ИНФО</a>
-                            </li>
-                            <li class="header-item">
-                                <a href="#games" class="header-link">ИГРЫ</a>
-                            </li>
-                            <li class="header-item">
-                                <a href="#contacts" class="header-link">КОНТАКТЫ</a>
-                            </li>
-                            <li class="header-item">
-                                <a href="https://itcvideogames.github.io/blog" class="header-link" target="_blank">БЛОГ</a>
-                            </li>
-                        </ul>
+                        <a href="#intro" class="header-link">НАЧАЛО</a>
+                        <a href="#info" class="header-link">ИНФО</a>
+                        <a href="#games" class="header-link">ИГРЫ</a>
+                        <a href="#contacts" class="header-link">КОНТАКТЫ</a>
+                        <a href="https://itcvideogames.github.io/blog" class="header-link" target="_blank">БЛОГ</a>
                     </nav>
 
 
                 </div> 
             </div> 
         </header>
-<main class="main">
-            <section class="intro" id="intro">
-                <div class="wrapper_2">
+
+    <main class="main">
+
+            <div class="intro" id="intro">
+                <div class="container">
                     <div class="main-logo">
 
                         <img src="img/cage_1.png" alt="Приветствую! Это Inside The Cage Игровой разработчик и издатель">
 
                      </div>
 
-                    <h1>
-                        <i class="wow fadeIn"data-wow-duration="1.5s" data-wow-delay="0.5s"><i class="intro-title-item">Приветствую!</i></i>
-                        <br clear="all">
-                        <i class="intro-title-item"><i class="wow fadeIn"data-wow-duration="1.5s" data-wow-delay="0.5s">Это</i> <i class="red-text">Inside The Cage </i></i>
-                        <br clear="all">
-                        <i class="wow fadeIn"data-wow-duration="1.5s" data-wow-delay="0.5s">Игровой разработчик и издатель</i>
-                    </h1>
-
-
-            </section>
+                    <div class="intro-title">
+                        <h1>
+                            <b class="wow fadeIn"data-wow-duration="1.5s" data-wow-delay="0.5s">Приветствую!</b>
+                            <br clear="all">
+                            <b class="wow fadeIn"data-wow-duration="1.5s" data-wow-delay="0.5s">Это</b> <b class="red-text">Inside The Cage </b></b>
+                            <br clear="all">
+                            <b class="wow fadeIn"data-wow-duration="1.5s" data-wow-delay="0.5s">Игровой разработчик и издатель</b>
+                        </h1>
+                    </div>
+                </div>
+            </div>
 
             <section class="info" id="info">
-                <div class="info-wrapper">
+                <div class="container">
                     <div class="wow zoomInRight">
                         <div class="info-rect">
-                            <img src="img/rect.png">
+                            
                             <h3 class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">У каждой игры есть потенциал и что-то хорошее, необычное. Но иногда всё это забывается из-за дурного вкуса, неоригинальности и низкого качества (работа была сделана на скорую руку). Поэтому я делаю хорошее и избегаю всего этого. Несмотря на все мнения, что все уже сказано, всегда можно рассказать что-то новое и необычное.</h3>
 
                     </div>
@@ -99,62 +89,91 @@
             </section>
 
             <section class="games" id="games">
-                <div class="games-wrapper">
-                    <h2>
-                        <i class="wow fadeIn" >Игры</i>
-                    </h2>
-                    <div class="carousel-wrapper">
-  <span id="item-1"></span>
-  <span id="item-2"></span>
-
-  <div class="carousel-item item-1">
-    <a href="https://itcvideogames.github.io/heaven-city"><img src="img/heaven-city.png" alt="Heaven City logo"></a>
-    <a class="arrow arrow-prev" href="#item-2"><img src="img/arrow-left-circle.png"></a>
-    <a class="arrow arrow-next" href="#item-2"><img src="img/arrow-right-circle.png"></a>
-  </div>
-
-  <div class="carousel-item item-2">
-    <p>Новые игры будут добавлены сюда</p>
-
-    <a class="arrow arrow-prev" href="#item-1"><img src="img/arrow-left-circle.png"></a>
-    <a class="arrow arrow-next" href="#item-1"><img src="img/arrow-right-circle.png"></a>
-  </div>
-
-
-</div>
-
-                </div>
+                <div class="container">
+                    <div class="section__header">
+                        <h2><i class="wow fadeIn" >Игры</i></h2>
+                    </div>
+                        <div id="slider">
+                        <input type="radio" name="slider" id="slide1" checked>
+                        <input type="radio" name="slider" id="slide2">
+   
+                        <div id="slides">
+                            <div id="overflow">
+                                <div class="inner">
+                                    <div class="slide slide_1">
+                                    <div class="slide-content">
+                                        <a href="https://itcvideogames.github.io/heaven-city" class="hc-games-logo">
+                                            <img src="img/heaven-city.png" alt="Heaven city logo cover" height="450" width="700">
+                                        </a>
+                                    </div>
+                                    </div>
+                                    <div class="slide slide_2">
+                                    <div class="slide-content">
+                                        <p class="section__header">Новые игры будут добавлены</p>
+                                    </div>
+                                    </div>
+            
+                                </div>
+                            </div>
+                        </div>
+                        <div id="controls">
+                            <label for="slide1"></label>
+                            <label for="slide2"></label>
+                            <label for="slide1"></label>
+                            <label for="slide2"></label>
+                        </div>
+                        <div id="bullets">
+                            <label for="slide1"></label>
+                            <label for="slide2"></label>
+                        </div>
+                        </div>
             </section>
-
+            
+            
             <section class="contacts" id="contacts">
-                <div class="contacts-wrapper">
-                    <h2>
-                        Контакты
-                    </h2>
+                <div class="container">
+
+                    <div class="section__header">
+                        <h2>Контакты</h2>
+                    </div>
 
                     <div class="contacts-icons">
-                        <a href="https://www.youtube.com/channel/UC5TiAyiNthdxJob6LEw4nHA" target="_blank" class="contacts-icons-item">
+                        <div class="contacts-icons-item">
+                            <a href="https://www.youtube.com/channel/UC5TiAyiNthdxJob6LEw4nHA" target="_blank" >
                             <img src="img/yt-icon.png" alt="Inside The Cage Youtube" width="94" height="94">
                         </a>
-                        <a href="https://discord.gg/6MNfcCfbJH" target="_blank" class="contacts-icons-item">
+                        </div>
+
+                        <div class="contacts-icons-item">
+                           <a href="https://discord.gg/6MNfcCfbJH" target="_blank">
                             <img src="img/discord-icon.png" alt="Inside The Cage Discord server" width="94" height="94">
                         </a>
-                        <a href="mailto:slining567@gmail.com" target="_blank" class="contacts-icons-item">
+                        </div>
+                        <div class="contacts-icons-item">
+                            <a href="mailto:slining567@gmail.com" target="_blank">
                             <img src="img/mail-icon.png" alt="Inside The Cage Mail" width="94" height="94">
                         </a>
-                        <a href="https://dtf.ru/u/609905-inside-the-cage" target="_blank" class="contacts-icons-item">
+                        </div>
+                        <div class="contacts-icons-item">
+                            <a href="https://dtf.ru/u/609905-inside-the-cage" target="_blank">
                             <img src="img/dtf-icon.png" alt="Inside The Cage Dtf" width="94" height="94">
                         </a>
-                        <a href="https://keyga.me/ru/store?developer=Inside%20The%20Cage" target="_blank" class="contacts-icons-item">
+                        </div>
+                        <div class="contacts-icons-item">
+                           <a href="https://keyga.me/ru/store?developer=Inside%20The%20Cage" target="_blank" >
                             <img src="img/keygame-icon.png" alt="Inside The Cage Keyga.me" width="94" height="94">
                         </a>
-                        <a href="https://inside-the-cage.itch.io/" target="_blank" class="contacts-icons-item">
+                        </div>
+                        <div class="contacts-icons-item">
+                            <a href="https://inside-the-cage.itch.io/" target="_blank" >
                             <img src="img/itchio-icon.png" alt="Inside The Cage itch.io"width="94" height="94">
                         </a>
-                        <a href="https://linktr.ee/insidethecagegames" target="_blank" class="contacts-icons-item">
+                        </div>
+                        <div class="contacts-icons-item">
+                           <a href="https://linktr.ee/insidethecagegames" target="_blank" >
                             <img src="img/linktree-icon.png" alt="Inside The Cage Linktree" width="121" height="94">
                         </a>
-
+                        </div>
                     </div>
 
                 </div>
@@ -165,63 +184,69 @@
 
         </main>
 
-        <footer >
 
-                <footer-wrapper align="center">
-
-
-                    <nav class="footer-nav">
-                        <ul class="footer-list">
-                            <li class="footer-item">
-                                <a href="#" class="footer-link">Начало</a>
-                                <br><a href="https://itcvideogames.github.io/blog" target="_blank" class="footer-link">
+<footer class="footer">
+     <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4><a href="#" class="sl">Начало</a></h4>
+                <ul>
+                    <li><a href="https://itcvideogames.github.io/blog" target="_blank" >
                                 Блог
-                                </a>
-                            </li>
-                            <li class="footer-item">
-                            <a href="#info" class="footer-link">Инфо</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="#games" class="footer-link">Игры</a>
-                                <br><a href="https://itcvideogames.github.io/heaven-city" class="footer-link">Heaven City</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="#contacts" class="footer-link">Контакты</a>
-                                <br><a href="https://www.youtube.com/channel/UC5TiAyiNthdxJob6LEw4nHA" target="_blank" class="footer-link">
+                                </a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4><a href="#info" class="fl">Инфо</a></h4>
+            </div>
+            <div class="footer-col">
+                <h4><a href="#games" class="fl">Игры</a></h4>
+                <ul>
+                    <li><a href="https://itcvideogames.github.io/heaven-city" >Heaven City</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 ><a href="#contacts"  class="el">Контакты</a></h4>
+                
+                                <ul>
+                                <li><a href="https://www.youtube.com/channel/UC5TiAyiNthdxJob6LEw4nHA" target="_blank" >
                                 Youtube
-                                </a>
-                                <br><a href="https://discord.gg/6MNfcCfbJH" target="_blank" class="footer-link">
+                                </a></li>
+
+                                <li><a href="https://discord.gg/6MNfcCfbJH" target="_blank" >
                                 Discord
-                                </a>
-                                <br><a href="mailto:slining567@gmail.com" target="_blank" class="footer-link">
+                                </a></li>
+                                <li><a href="mailto:slining567@gmail.com" target="_blank" >
                                 Email
-                                </a>
-                                <br><a href="https://dtf.ru/u/609905-inside-the-cage" target="_blank" class="footer-link">
+                                </a></li>
+                                <li><a href="https://dtf.ru/u/609905-inside-the-cage" target="_blank" >
                                 DTF.ru
-                                </a>
-                                <br><a href="https://keyga.me/ru/store?developer=Inside%20The%20Cage" target="_blank" class="footer-link">
+                                </a></li>
+                                <li><a href="https://keyga.me/ru/store?developer=Inside%20The%20Cage" target="_blank" >
                                 Keyga.me
-                                </a>
-                                <br><a href="https://inside-the-cage.itch.io/" target="_blank" class="footer-link">
+                                </a></li>
+                                <li><a href="https://inside-the-cage.itch.io/" target="_blank" >
                                 itch.io
-                                </a>
-                                <br><a href="https://linktr.ee/insidethecagegames" target="_blank" class="footer-link">
+                                </a></li>
+                                <li><a href="https://linktr.ee/insidethecagegames" target="_blank" >
                                 Linktree
-                                </a>
+                                </a></li>
+                                </ul>
+                
+            </div>
+            <div class="footer-col">
+               <ul>
+                    <li class="footer-logo">
+                        <img src="img/footer_cage.png" alt="Inside The Cage" class="footer-logo-img">
+                     </li>
+                </ul>
+            </div>
+        </div>
+     </div>
+  </footer>
 
-                            </li>
-                            <li class="footer-logo">
-
-                                <img src="img/footer_cage.png" alt="Inside The Cage" class="footer-logo-img">
-                            </li>
-
-                        </ul>
-                    </nav>
-
-
-
-                </footer-wrapper>
-        </footer>
     <script type="text/javascript">
     wow = new WOW({
         mobile:       true,
