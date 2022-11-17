@@ -873,22 +873,377 @@ right:50px;
 
 
 
-@media(max-width: 1200px){
-  .header-logo {
-    padding: 12px;
+
+/*Heaven City Game Page*/
+
+.gamepages__header{
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 50px;
+
+    text-align: center;
+
+    font-family: 'Naga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 65px;
+    
+
+    color: #FFFFFF;
+  } 
+
+.heaven-city-cover{
+  padding-top: 100px;
+  padding-bottom: 0px; 
+
+}
+.hc-intro-container{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.hc-intro-text-wrapper{
+margin-top: 100px;
+    
+    
+}
+
+.hc-intro-text h1{
+    width: 100%;
+    max-width: 1135px;
+    margin: 0 auto;
+    margin-top: 45px;
+    src: url(../fonts/Naga);
+    font-family: 'Naga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    color: #FFFFFF;
+}
+  
+
+  
+
+
+  .hc-intro-text p{
+
+    width: 100%;
+    margin-top: 100px;
+    src: url(../fonts/Naga);
+    font-family: 'Naga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31px;
+    text-align: center;
+    color: #FFFFFF;
+    
   }
 
-  .header-logo img{
-    transform: scale(0.9, 0.9);
-    -webkit-transform: scale(0.9, 0.9);
-    -moz-transform: scale(0.9, 0.9);
-    -o-transform: scale(0.9, 0.9);
+
+.hc-intro-text a{
+    text-decoration: none;
+    transition: 0.5s;
+
+ }
+
+.hc-intro-text a:hover, .hc-intro-text a:focus, .hc-intro-text a:active{
+    text-shadow: 0 0 20px #ffffff;
+    transition: 0.5s;
   }
-.header-logo img:hover{
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);}
+
+  .hc-intro-text-wrapper hr {
+
+  border:3px solid white;
+  width: 100%;
+  display: block;
+
+}
+
+  .hc-trailer{
+    margin-top: 200px;
+  }
+ 
+  
+  
+
+  .hc-video{
+    border: 10px solid;
+  border-color:  #ffffff;
+  }
+  .hc-video-w{
+    text-align: center;
+    padding-top: 60px;
+  }
+
+  .hc-art{
+    margin-top: 180px;
+    
+  }
+
+
+  .hc-art p{
+    src: url(../fonts/Naga.ttf); 
+    font-family: 'Naga';
+    font-style: normal;
+    text-align: center;
+    font-size: 21px;
+    color: #FFFFFF;
+  }
+
+  .hc-art-list{
+    padding-top: 110px;
+    display: flex;
+    flex-wrap: wrap;
+
+    
+    justify-content: space-evenly;
+    
+  }
+
+.hc-sart-item, .hc-lart-item{
+  border: 7px solid;
+  border-color:  #f2f2f2;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px #FFFFFF;
+
+}
+  .hc-lart-item{
+    margin-top: 100px;
+  }
+
+
+
+
+
+
+/*Blog | Inside The Cage Games*/
+#content {
+  position: relative;
+  float: left;
+  width: 1115px;
+  top: 350px;
+  left: 148px;
+  
+}
+.page-posts{
+  margin-top: 300px;
+}
+.post-1{
+
+  background: url(../img/blog-rect.png) no-repeat ;
+  background-size: contain;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.page-posts a{
+  text-decoration: none;
+  color: white;
+}
+.post-1 img {
+    position: relative;
+    
+    top: 27px;
+    left: 19px;
+}
+
+.blog__header{
+    top: 34px;
+    position: relative;
+    left: 72px;
+    width: 532px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+.blog__descr{position: relative;
+    bottom: 101px;
+    left: 360px;
+    width: 735px;
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Medium.ttf);
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+
+
+
+}
+
+
+
+/*Heaven city released!*/
+
+
+.article{
+  border: 7px solid;
+  border-color:  #ffffff;
+  
+  border-right: none; 
+  border-left: none; 
+}
+.news-content-info {
+  max-height: 90px; 
+
+    }
+
+.news-content-info h1{
+  margin-top: 50px;
+  font-size: 46px;
+  padding-left: 100px;
+  text-align: left;
+  font-family: 'Naga';
+  color: #FFFFFF;
+
+  src: url(../fonts/Naga); 
+
+  font-style: normal;
+  font-weight: 400;
+  line-height: 62px;
+
+    }
+
+.publish-data{    
+  text-align: left;
+  padding-left: 100px;
+  padding-top: 15px;
+  font-size: 15px;
+  font-family: 'Montserrat';
+font-style: normal;
+
+line-height: 21px;
+
+color: #FFFFFF;
+}
+.dark-red{
+  color: #AF1414;
+  font-size: 20px;}
+  
+.news-content-info hr {
+
+  border:1px solid #AF1414;
+  border-radius: 5px;
+  display: block;
+  margin-top: 15px;
+
+  margin-left: 100px;
+  margin-right: auto;
+
+  width:84%;
+
+}
+
+.news-content h2{
+  margin-bottom: 20px;
+  margin-top: 63px;
+  text-align: left;
+  padding-left: 100px;
+
+  font-size: 32px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+
+
+color: #FFFFFF;
+}
+
+.news-content p{
+  width: 100%;
+  max-width::1125px;
+  text-align: left;
+  padding-left: 100px;
+font-weight: 400;
+  font-size: 20px;
+  font-family: 'Montserrat';
+font-style: normal;
+line-height: 30px;
+
+
+color: #FFFFFF;
+
+}
+
+.news-content p: last-child{
+  padding-bottom: 100px;
+}
+
+.news-content b{
+  
+font-weight: 700;
+
+}
+
+.news-content iframe{
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  margin-bottom:30px;
+  cursor: pointer;
+
+}
+
+.video-descr{
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 400;
+  
+  font-family: 'Montserrat';
+}
+.news-video{
+  text-align: center;
+  margin-bottom:50px;
+
+}
+.news-quote blockquote{
+  padding-top: 50px;
+  margin-bottom:12px;
+  color: #FFFFFF;
+  font-size: 30px;
+  font-weight: 400;
+  
+  font-family: 'Naga';
+}
+.news-prim{
+  padding-left: 310px;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 400;
+  
+  font-family: 'Montserrat';
+
+}
+.news-quote{
+  text-align: center;
+  margin-bottom:50px;
+}
+
+.dark-red-quote{
+  color: #AF1414;}
+
+  .last-one{
+    margin-bottom: 50px;
+  }
+
+
+@media(max-width: 1200px){
+ 
+
+  .header-logo img{
+    width: 72px;
+    height: 69px;
+  }
+
 
   .header-link {
     margin-right: 80px;
@@ -899,8 +1254,9 @@ right:50px;
     text-shadow: 0 0 30px #ffff99;
     transition: 0.5s;
   }
-  .main-logo{
-   scale : 90%;
+  .main-logo img{
+   width: 279px;
+    height: 269px;
   }
 
   .intro-title {
@@ -982,17 +1338,58 @@ right:50px;
     padding: 0 39px;
 }
 
-.heaven-city-cover{
-  
+
+
+.hc-intro-text h1{
+    max-width: 903px;
+    font-size: 28px;
 }
+  
+  .hc-intro-text p{
 
+    width: 100%;
+    margin-top: 100px;
+    src: url(../fonts/Naga);
+    font-family: 'Naga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    text-align: center;
+    color: #FFFFFF;
+    
+  }
 
- .topbutton{
+.gamepages__header{
+    font-size: 27px;
+   
+  } 
+
+.topbutton{
   transform: scale(0.9, 0.9);
     -webkit-transform: scale(0.9, 0.9);
     -moz-transform: scale(0.9, 0.9);
     -o-transform: scale(0.9, 0.9);
 }
+
+
+
+.hc-art p {
+    font-size: 20px;
+
+}
+
+.hc-sart-item{
+  width: 290px;
+  height: 484px;
+  }
+
+.hc-lart-item{
+  width: 930px;
+  height: 525px;
+
+  }
+
+
 
 }
 
@@ -1019,8 +1416,9 @@ right:50px;
     margin-right: 86px;
     font-size: 21px;
   }*/
-  .main-logo{
-    scale : 80%;
+  .main-logo img {
+   width: 249px;
+    height: 240px;
   }
 
   .intro-title {
@@ -1057,10 +1455,8 @@ right:50px;
 }
 
 .hc-games-logo img {
-    transform: scale(0.7, 0.7);
-    -webkit-transform: scale(0.7, 0.7);
-    -moz-transform: scale(0.7, 0.7);
-    -o-transform: scale(0.7, 0.7);
+    width: 473px;
+    height: 334px;
   }
 
 #slides .inner {
@@ -1165,12 +1561,56 @@ right:50px;
     padding-top: 0px;
 }*/
 
-.footer-logo {
-    transform: scale(0.9, 0.9);
-    -webkit-transform: scale(0.9, 0.9);
-    -moz-transform: scale(0.9, 0.9);
-    -o-transform: scale(0.9, 0.9);
+.footer-logo img{
+   width: 135px;
+    height: 130px;
+  }
+
+
+
+.hc-intro-text h1{
+    max-width: 903px;
+    font-size: 26px;
 }
+  .hc-intro-text p{
+
+    width: 100%;
+    margin-top: 100px;
+    src: url(../fonts/Naga);
+    font-family: 'Naga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    
+  }
+
+.gamepages__header{
+    font-size: 25px;
+   
+  } 
+
+.hc-video-w  iframe{
+  width: 85%;
+    height: 506px;
+}
+ 
+.hc-art p {
+    font-size: 19px;
+
+}
+
+.hc-sart-item{
+  width: 250px;
+  height: 420px;
+  }
+
+.hc-lart-item{
+  width: 714px;
+  height: 402px;
+
+  }
 
  .topbutton{
   display: none;
@@ -1186,23 +1626,19 @@ right:50px;
   }
   .header-logo img{
 
-    transform: scale(0.8, 0.8);
-    -webkit-transform: scale(0.8, 0.8);
-    -moz-transform: scale(0.8, 0.8);
-    -o-transform: scale(0.8, 0.8);
   }*/
  .header-link {
     margin-right: 50px;
     font-size: 18px;
   }
 
- .main-logo{
-    scale : 60%;
+ .main-logo img{
+    width: 219px;
+    height: 211px;
   }
 
   .intro-title {
     max-width: 458px;
-    margin-top: 1px;
     font-size: 27px;
     line-height: 32px;
 }
@@ -1231,10 +1667,8 @@ right:50px;
 }
 
 .hc-games-logo img {
-    transform: scale(0.5, 0.5);
-    -webkit-transform: scale(0.5, 0.5);
-    -moz-transform: scale(0.5, 0.5);
-    -o-transform: scale(0.5, 0.5);
+      width: 310px;
+    height: 225px;
   }
 
 #slides .inner {
@@ -1305,16 +1739,64 @@ right:50px;
     
  }
 
- 
+ .hc-intro-text h1{
+    max-width: 903px;
+    font-size: 20px;
+}
+  
+
+  
 
 
- }
+  .hc-intro-text p{
+
+    width: 100%;
+    margin-top: 100px;
+    src: url(../fonts/Naga);
+    font-family: 'Naga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    
+  }
+
+.gamepages__header{
+    font-size: 19px;
+   
+  } 
+
+  .hc-video-w iframe {
+    height: 390px;
+}
+
+  .hc-art p {
+    font-size: 15px;
+
+}
+
+.hc-sart-item{
+  width: 200px;
+  height: 334px;
+  }
+
+.hc-lart-item{
+  width: 536px;
+  height: 332px;
+
+  }
+
+  }
+
+
 
 @media(max-width: 574px){
 
-  .main-logo{
-    scale : 45%;
+  .main-logo img{
     
+    width: 150px;
+    height: 144px;
   }
  .intro {
     width: 100%;
@@ -1325,7 +1807,6 @@ right:50px;
 
   .intro-title {
     max-width: 222px;
-    margin-top: -40px;
     font-size: 18px;
     line-height: 22px;
 }
@@ -1372,10 +1853,8 @@ right:50px;
    display: none;
 }
 .hc-games-logo img {
-    transform: scale(0.4, 0.4);
-    -webkit-transform: scale(0.4, 0.4);
-    -moz-transform: scale(0.4, 0.4);
-    -o-transform: scale(0.4, 0.4);
+    width: 260px;
+    height: 200px;
 }
 
 #slides {
@@ -1418,67 +1897,18 @@ right:50px;
     padding: 0 27px;
 }
 
-.footer-logo {
-    transform: scale(0.8, 0.8);
-    -webkit-transform: scale(0.8, 0.8);
-    -moz-transform: scale(0.8, 0.8);
-    -o-transform: scale(0.8, 0.8);
+.footer-logo img{
+   width: 120px;
+    height: 116px;
 }
 
 .footer{
 
   margin-top: 175px;
 }
-
-}
-
-
-
-
-
-
-
-/*Heaven City Game Page*/
-
-.gamepages__header{
-    width: 100%;
-    max-width: 950px;
-    margin: 0 auto 50px;
-
-    text-align: center;
-
-    font-family: 'Naga';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 31px;
-    line-height: 65px;
-    
-
-    color: #FFFFFF;
-  } 
-
-.heaven-city-cover{
-  padding-top: 100px;
-}
-
-.hc-intro-text-wrapper{
-margin-top: 100px;
-    
-    
-}
-
 .hc-intro-text h1{
-    width: 100%;
-    max-width: 1135px;
-    margin: 0 auto;
-    margin-top: 45px;
-    src: url(../fonts/Naga);
-    font-family: 'Naga';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    text-align: center;
-    color: #FFFFFF;
+    max-width: 903px;
+    font-size: 16px;
 }
   
 
@@ -1493,306 +1923,54 @@ margin-top: 100px;
     font-family: 'Naga';
     font-style: normal;
     font-weight: 400;
-    font-size: 31px;
+    font-size: 15px;
     text-align: center;
     color: #FFFFFF;
     
   }
 
+.gamepages__header{
+    font-size: 15px;
+   
+  } 
 
-.hc-intro-text a{
-    text-decoration: none;
-    transition: 0.5s;
-    font-size: 31px;
+  .hc-video {
+    border: 7px solid;
+    border-color: #ffffff;
+}
 
- }
-
-.hc-intro-text a:hover, .hc-intro-text a:focus, .hc-intro-text a:active{
-    text-shadow: 0 0 20px #ffffff;
-    transition: 0.5s;
-  }
-
-  .hc-intro-text-wrapper hr {
-
-  border:3px solid white;
-  width: 100%;
-  display: block;
+.hc-video-w iframe {
+    height: 510px;
+}
+  .hc-art p {
+    font-size: 10px;
 
 }
 
-  .hc-trailer{
-    margin-top: 200px;
-  }
- 
-  
-  
-
-  .hc-video{
-    border: 10px solid;
-  border-color:  #ffffff;
-  }
-  .hc-video-w{
-    text-align: center;
-    padding-top: 60px;
-  }
-
-  .hc-art{
-    margin-top: 180px;
-    
-  }
 
 
-  .hc-art p{
-    src: url(../fonts/Naga.ttf); 
-    font-family: 'Naga';
-    font-style: normal;
-    text-align: center;
-    font-size: 21px;
-    color: #FFFFFF;
-  }
-
-  .hc-art-list{
+.hc-art-list{
     padding-top: 110px;
-    display: flex;
-    flex-wrap: wrap;
-
-    
-    justify-content: space-evenly;
-    
-  }
-.hc-art-item{
-  border: 7px solid;
-  border-color:  #f2f2f2;
-  border-radius: 20px;
-  box-shadow: 0px 0px 15px #FFFFFF;
-
-}
-  .hc-art-item:last-child{
-    margin-top: 100px;
   }
 
-
-
-
-
-
-/*Blog | Inside The Cage Games*/
-#content {
-  position: relative;
-  float: left;
-  width: 1115px;
-  top: 350px;
-  left: 148px;
-  
-}
-
-.post-1{
-
-  background: url(../img/blog-rect.png) no-repeat ;
-  background-size: contain;
-  display: flex;
-  flex-wrap: wrap;
-  
-}
-
-.post-1 a{
-  text-decoration: none;
-  color: white;
-}
-.post-1 img {
-    position: relative;
-    
-    top: 27px;
-    left: 19px;
-}
-
-.post-1 h2{
-
-position: relative;
-bottom:130px;
-left: 36px;
-width: 532px;
-height: 34px;
-
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 25px;
-
-text-align: center;
-
-color: #FFFFFF;
-
-
-
-
-}
-
-.post-1 p{position: relative;
-bottom:101px;
-left: 325px;
-width: 720px;
-height: 109px;
-
-font-family: 'Montserrat';
-src: url(../fonts/Montserrat-Medium.ttf);
-font-style: normal;
-font-weight: 200;
-font-size: 15px;
-line-height: 22px;
-
-color: #FFFFFF;
-
-
-
-}
-
-
-
-/*Heaven city released!*/
-
-.hc-introreal-wrapper{
-  max-height: 1500px;
-  
-}
-.article{
-  border: 7px solid;
-  border-color:  #ffffff;
-  
-  border-right: none; 
-  border-left: none; 
-}
-.news-content-info {
-  max-height: 0px; 
-
-    }
-
-.news-content-info h1{
-  padding-left: 100px;
-  text-align: left;
-  font-family: 'Naga';
-  src: url(../fonts/Naga.ttf); 
-
-    }
-.publish-data{    
-  text-align: left;
-  padding-left: 100px;
-  padding-top: 15px;
-  font-size: 15px;
-  font-family: 'Montserrat';
-font-style: normal;
-
-line-height: 21px;
-
-color: #FFFFFF;
-}
-.dark-red{
-  color: #AF1414;
-  font-size: 20px;}
-  
-.news-content-info hr {
-
-  border:1px solid #AF1414;
-  border-radius: 5px;
-  display: block;
-  margin-top: 15px;
-
-  margin-left: 100px;
-  margin-right: auto;
-
-  width:84%;
-
-}
-
-.news-content h2{
-  text-align: left;
-  padding-left: 100px;
-
-  font-size: 32px;
-  font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-
-
-color: #FFFFFF;
-}
-
-.news-content p{
-  width:1125px;
-  text-align: left;
-  padding-left: 100px;
-font-weight: 400;
-  font-size: 20px;
-  font-family: 'Montserrat';
-font-style: normal;
-line-height: 30px;
-
-
-color: #FFFFFF;
-
-}
-
-.news-content p: last-child{
-  padding-bottom: 100px;
-}
-.news-content b{
-  
-font-weight: 700;
-
-}
-
-.news-content iframe{
-  padding-top: 50px;
-  
-    padding-left: 400px;
-    left: 0;
-    top: 0;
-    margin-bottom:15px;
-    
-    cursor: pointer;
-
-}
-
-.video-descr{
-  padding-left: 310px;
-  color: #FFFFFF;
-  font-size: 15px;
-  font-weight: 400;
-  
-  font-family: 'Montserrat';
-}
-.news-video{
-  margin-bottom:50px;
-
-}
-.news-quote blockquote{
-  padding-top: 50px;
-  margin-bottom:12px;
-  padding-left: 310px;
-  color: #FFFFFF;
-  font-size: 30px;
-  font-weight: 400;
-  
-  font-family: 'Naga';
-}
-.news-prim{
-  padding-left: 310px;
-  color: #FFFFFF;
-  font-size: 15px;
-  font-weight: 400;
-  
-  font-family: 'Montserrat';
-
-}
-.news-quote{
-  margin-bottom:50px;
-}
-
-.dark-red-quote{
-  color: #AF1414;}
-
-  .last-one{
-    margin-bottom: 50px;
+  .hc-art-item{
+  margin-bottom: 45px;
   }
+
+  .hc-sart-item{
+  width: 150px;
+  height: 250px;
+  }
+
+.hc-lart-item{
+  width: 100%;
+  height: 200px;
+  margin-top: 0px;
+  }
+}
+
+
+
+
 
 
