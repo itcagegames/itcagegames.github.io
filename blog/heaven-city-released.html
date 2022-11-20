@@ -75,10 +75,10 @@
                     
             </div> 
          </header>
-     <div class="header_button"></header><div id="menuToggle"><input type="checkbox" id="myCheck" onclick="myFunction()"> <span></span><span></span><span></span></div></div>
+     <div class="header_button"></header><div id="menuToggle"><input type="checkbox" id="myCheck" onclick="headerActivate()"> <span></span><span></span><span></span></div></div>
 
         <script>
-            function myFunction() {
+            function headerActivate() {
                 var checkBox = document.getElementById("myCheck");
                 var text = document.getElementById("header")
                 if (checkBox.checked == true){
@@ -91,15 +91,15 @@
         </script>
      <main>
 
-        <div class="hc-intro" id="hc-intro">
+         <div class="hc-intro" id="hc-intro">
             
             <div class="container" >
 
                 <div class="heaven-city-cover"><img src="../img/heaven-city-cover.png" style="height: 90%;width: 90%;"></div>
             </div>
-        </div>
+         </div>
 
-        <section class="article">
+         <section class="article">
          <div class="container">
             <div class="news-content-info">
                      <h1>Heaven City наконец-то выпущена!</h1>
@@ -145,7 +145,7 @@
              </div>
           </div>
          </section>
-        <section class="hc-article-trailer" id="hc-trailer">
+         <section class="hc-article-trailer" id="hc-trailer">
             <div class="container">
 			 <div class="news-video-after"><iframe width="75%" height="768" src="https://www.youtube.com/embed/lSrPb_yfzJk" allow=" picture-in-picture" allowfullscreen class="hc-video" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}
                 html,body{height:100%}
@@ -159,6 +159,7 @@
              </div>                    
             </div>
             </section>
+
      </main>
      
      <footer class="footer">
@@ -168,8 +169,7 @@
                 <h4><a href="#" class="sl">Главная</a></h4>
                 <ul>
                     <li><a href="https://itcvideogames.github.io/blog" target="_blank" >
-                                Блог
-                                </a></li>
+                    Блог</a></li>
                     
                 </ul>
             </div>
