@@ -1549,7 +1549,7 @@ font-weight: 700;
 
   .news-content iframe {
     width: 75%;
-    height: 540px;}
+    height: 480px;}
 
   .news-quote blockquote{
   font-size: 27px;
@@ -1833,10 +1833,9 @@ font-weight: 700;
   }
 
   .news-content iframe {
-    width: 75%;
-    height: 540px;
-    margin-bottom: 0px;
-      }
+    padding-top: 0px;
+    height: 400px;
+  }
 
   .video-descr {
     color: #FFFFFF;
@@ -2098,11 +2097,8 @@ font-weight: 700;
   }
 
   .news-content iframe {
-    padding-top: 0;
-    width: 75%;
-    height: 540px;
-    margin-bottom: -90px;
-      }
+    height: 320px;
+  }
 
   .video-descr {
     color: #FFFFFF;
@@ -2382,10 +2378,7 @@ font-weight: 700;
     font-size: 12px;
 }
   .news-content iframe {
-    padding-top: 0;
-    width: 75%;
-    height: 540px;
-    margin-bottom: -130px;
+    height: 240px;
       }
 
   .news-quote blockquote{
