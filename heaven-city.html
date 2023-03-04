@@ -55,70 +55,55 @@
          }, 500);
          }
         </script>
-        
+
         <header class="header" id="header">
-            <div class="container">
-
-                <div class="header-wrapper">
-                    <div class="header-logo">
-                        <a href="https://itcagegames.github.io/">
-                        <img src="headerlogo.png" alt="Приветствую! Это Inside The Cage Игровой разработчик и издатель" class="header-logo-img" width="77" height="74">
-                        </a>
-                    </div>
-
-                    <nav class="header-nav">
-                        <a href="#" class="header-link">НАЧАЛО</a>
-                        <a href="#hc-intro-text-wrapper" class="header-link">ИГРА</a>
-                        <a href="#hc-trailer" class="header-link">ТРЕЙЛЕР</a>
-                        <a href="#hc-art" class="header-link">АРТ</a>
-                    </nav>
-
-
-                </div> 
-            </div> 
+          <a href="https://itcagegames.github.io/"> <img class="header-logo" src="headerlogo.png" alt="Приветствую! Это Inside The Cage Игровой разработчик и издатель" class="header-logo-img"> </a>
+          <a href="#" class="header-link">НАЧАЛО</a>
+          <a href="#hc-intro" class="header-link">ИГРА</a>
+          <a href="#hc-trailer" class="header-link">ТРЕЙЛЕР</a>
+          <a href="#hc-art" class="header-link">АРТ</a>
         </header>
-        <div class="header_button"></header><div id="menuToggle"><input type="checkbox" id="myCheck" onclick="headerActivate()"> <span></span><span></span><span></span></div></div>
+        
 
-        <script>
-            function headerActivate() {
-                var checkBox = document.getElementById("myCheck");
-                var text = document.getElementById("header")
-                if (checkBox.checked == true){
-                    text.style.display = "block";
-                } 
-                else {
-                    text.style.display = "none";
-                }
-            }
-        </script>
+        <div class="header_button">
+            <label class="hb_content">
+              <input type="checkbox" id="headerResumeCheck" onclick="headerResume()">
+              <div class="checkmark">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </label>
+        </div>
+
+    <script>
+      function headerResume() {
+        var checkBox = document.getElementById("headerResumeCheck");
+        var text = document.getElementById("header")
+        if (checkBox.checked == true) {
+          text.style.display = "flex";
+        } else {
+          text.style.display = "none";
+        }
+      }
+    </script>
+
         <main class="main">
 
    
-        <div class="hc-intro" id="hc-intro">
-            
-            <div class="container" >
-
-                <div class="heaven-city-cover"><img src="img/heaven-city-cover.png" style="height: 90%;width: 90%;"></div>
-            </div>
+        <div class="hc-cover" id="hc-cover">
+            <img src="img/heaven-city-cover.png">
         </div>
 
-            <section class="hc-intro-text-wrapper" id="hc-intro-text-wrapper" >
-                
-                 <div class="hc-intro-container">
-                    <hr>
-                    <div class="hc-intro-text" id="hc-intro-text">
+        <div class="hc-intro" id="hc-intro" >           
+            <hr>
+                <h1>Heaven City - это текстовое приключение (текстовый квест или interactive fiction) в сеттинге киберпанка, постапокалипсиса и других... Вам пригодится воображение, которое позволит "рендерить" всё происходящее в игре. В ней лишь будут наброски. </h1>
                         
-                        <h1>Heaven City - это текстовое приключение (текстовый квест или interactive fiction) в сеттинге киберпанка, постапокалипсиса и других... Вам пригодится воображение, которое позволит "рендерить" всё происходящее в игре. В ней лишь будут наброски. </h1>
-                        
-                        <a href="https://keyga.me/ru/app/190/heaven-city" target="_blank"><p><button class="btn-hover colored">Страница игры</button></p></a>
-                     </div>
-                    <hr>
-                 </div>
-                 
-            </section>
+                <div class="hc-button"><a href="https://keyga.me/ru/app/190/heaven-city" target="_blank"><button class="btn-hover colored">Страница игры</button></a></div>
+            <hr>
+        </div>
 
-            <section class="hc-trailer" id="hc-trailer">
-                <div class="container">
+            <div class="hc-trailer" id="hc-trailer">
                     <div class="gamepages__header">  
                     <h2 class="wow fadeIn">Трейлер</h2></div>
                     <div class="hc-video-w" ><iframe align="center" width="100%" height="768px" src="https://www.youtube.com/embed/lSrPb_yfzJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="hc-video" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}
@@ -130,11 +115,9 @@
                     <img src=https://img.youtube.com/vi/lSrPb_yfzJk/hqdefault.jpg alt='Heaven city game trailer'>
                     <span>▶</span>
                     </a>"></iframe></div>
-                    
-                    </div>
-            </section>
+            </div>
 
-            <section class="hc-art" id="hc-art">
+            <div class="hc-art" id="hc-art">
                 <div class="container">
                     <div class="gamepages__header"><h2  class="wow fadeIn">Арт</h2></div>
                     <p class="wow fadeIn" data-wow-delay="0.5s">Некоторые концепт-арты(и не только), связанные с игрой</p>
@@ -145,71 +128,65 @@
                     </div>
                 </div>
 
-            </section>
+            </div>
         </main>
 
 
 
-        <footer class="footer">
-     <div class="container">
-        <div class="row">
-            <div class="footer-col">
-                <h4><a href="https://itcagegames.github.io/" class="sl">Главная</a></h4>
-                <ul>
-                    <li><a href="https://itcagegames.github.io/blog" target="_blank" >
-                                Блог
-                                </a></li>
-                    
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4><a href="#info" class="fl">Инфо</a></h4>
-            </div>
-            <div class="footer-col">
-                <h4><a href="#games" class="fl">Игры</a></h4>
-                <ul>
-                    <li><a>Heaven City</a></li>
-                    
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4 ><a href="#contacts"  class="el">Контакты</a></h4>
-                
-                                <ul>
-                                <li><a href="https://www.youtube.com/channel/UC5TiAyiNthdxJob6LEw4nHA" target="_blank" >
-                                Youtube
-                                </a></li>
-
-                                <li><a href="https://discord.gg/6MNfcCfbJH" target="_blank" >
-                                Discord
-                                </a></li>
-                                <li><a href="mailto:slining567@gmail.com" target="_blank" >
-                                Email
-                                </a></li>
-                                <li><a href="https://dtf.ru/u/609905-inside-the-cage" target="_blank" >
-                                DTF.ru
-                                </a></li>
-                                <li><a href="https://keyga.me/ru/store?developer=Inside%20The%20Cage" target="_blank" >
-                                Keyga.me
-                                </a></li>
-                                <li><a href="https://inside-the-cage.itch.io/" target="_blank" >
-                                itch.io
-                                </a></li>
-                                <li><a href="https://linktr.ee/insidethecagegames" target="_blank" >
-                                Linktree
-                                </a></li>
-                                </ul>
-                
-            </div>
-            <div class="footer-col">
-               <ul>
-                    <li class="footer-logo">
-                        <img src="img/footer_cage.png" alt="Inside The Cage" class="footer-logo-img">
-                     </li>
-                </ul>
-            </div>
-        </div>
-     </div>
+  <footer class="footer">
+      <div class="footer-column">
+        <a href="#">Начало<span></span></a>
+        <ul>
+          <li></li>
+          <li>
+            <a href="https://itcagegames.github.io/blog" target="_blank"> Блог </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <a href="#info">Инфо<span></span></a>
+      </div>
+      <div class="footer-column">
+        <a href="#games">Игры<span></span></a>
+        <ul>
+          <li>
+            <a>Heaven City</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <a href="#contacts">Контакты<span></span></a>
+        <ul>
+          <li>
+            <a href="https://www.youtube.com/channel/UC5TiAyiNthdxJob6LEw4nHA" target="_blank"> Youtube </a>
+          </li>
+          <li>
+            <a href="https://discord.gg/6MNfcCfbJH" target="_blank"> Discord </a>
+          </li>
+          <li>
+            <a href="mailto:slining567@gmail.com" target="_blank"> Email </a>
+          </li>
+          <li>
+            <a href="https://dtf.ru/u/609905-inside-the-cage" target="_blank"> DTF.ru </a>
+          </li>
+          <li>
+            <a href="https://keyga.me/ru/store?developer=Inside%20The%20Cage" target="_blank"> Keyga.me </a>
+          </li>
+          <li>
+            <a href="https://inside-the-cage.itch.io/" target="_blank"> itch.io </a>
+          </li>
+          <li>
+            <a href="https://linktr.ee/insidethecagegames" target="_blank"> Linktree </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-column logo">
+        <ul>
+          <li class="footer-logo">
+            <img src="img/footer_cage.png" alt="Inside The Cage">
+          </li>
+        </ul>
+      </div>
   </footer>
 
         <script type="text/javascript">

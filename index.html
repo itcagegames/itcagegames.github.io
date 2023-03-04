@@ -35,7 +35,7 @@
     </style>
   </head>
 
-  <body class="bod">
+  <body class="body-main">
     <div class="preloader">
       <div class="spinner"></div>
     </div>
@@ -60,18 +60,19 @@
     </header>
 
     <div class="header_button">
-      </header>
-      <div id="menuToggle">
-        <input type="checkbox" id="myCheck" onclick="headerActivate()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+        <label class="hb_content">
+          <input type="checkbox" id="headerResumeCheck" onclick="headerResume()">
+          <div class="checkmark">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </label>
     </div>
 
     <script>
-      function headerActivate() {
-        var checkBox = document.getElementById("myCheck");
+      function headerResume() {
+        var checkBox = document.getElementById("headerResumeCheck");
         var text = document.getElementById("header")
         if (checkBox.checked == true) {
           text.style.display = "flex";
@@ -190,7 +191,7 @@
 
     <footer class="footer">
       <div class="footer-column">
-        <a href="#" class="sl">Начало</a>
+        <a href="#">Начало<span></span></a>
         <ul>
           <li></li>
           <li>
@@ -199,10 +200,10 @@
         </ul>
       </div>
       <div class="footer-column">
-        <a href="#info" class="fl">Инфо</a>
+        <a href="#info">Инфо<span></span></a>
       </div>
       <div class="footer-column">
-        <a href="#games" class="fl">Игры</a>
+        <a href="#games">Игры<span></span></a>
         <ul>
           <li>
             <a href="https://itcagegames.github.io/heaven-city">Heaven City</a>
@@ -210,7 +211,7 @@
         </ul>
       </div>
       <div class="footer-column">
-        <a href="#contacts" class="el">Контакты</a>
+        <a href="#contacts">Контакты<span></span></a>
         <ul>
           <li>
             <a href="https://www.youtube.com/channel/UC5TiAyiNthdxJob6LEw4nHA" target="_blank"> Youtube </a>
