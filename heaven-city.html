@@ -42,163 +42,168 @@
     }</style>
     </head>
 
-    <body>
-        <div class="preloader">
-            <div class="spinner"> </div>
-        </div>
-        <script>
-         window.onload = function () {
-         document.body.classList.add('loaded_hiding');
-         window.setTimeout(function () {
-         document.body.classList.add('loaded');
-         document.body.classList.remove('loaded_hiding');
-         }, 500);
-         }
-        </script>
-
-        <header class="header" id="header">
-          <a href="https://itcagegames.github.io/"> <img class="header-logo" src="headerlogo.png" alt="Приветствую! Это Inside The Cage Игровой разработчик и издатель" class="header-logo-img"> </a>
-          <a href="#" class="header-link">НАЧАЛО</a>
-          <a href="#hc-intro" class="header-link">ИГРА</a>
-          <a href="#hc-trailer" class="header-link">ТРЕЙЛЕР</a>
-          <a href="#hc-art" class="header-link">АРТ</a>
-        </header>
-        
-
-        <div class="header_button">
-            <label class="hb_content">
-              <input type="checkbox" id="headerResumeCheck" onclick="headerResume()">
-              <div class="checkmark">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </label>
-        </div>
-
-    <script>
-      function headerResume() {
-        var checkBox = document.getElementById("headerResumeCheck");
-        var text = document.getElementById("header")
-        if (checkBox.checked == true) {
-          text.style.display = "flex";
-        } else {
-          text.style.display = "none";
-        }
+ <body>
+  <div class="preloader">
+    <div class="spinner"></div>
+  </div>
+  <script>
+    window.onload = function() {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function() {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
+  <header class="header" id="header">
+    <a href="index.html">
+      <img class="header-logo" src="headerlogo.png" alt="Приветствую! Это Inside The Cage Игровой разработчик и издатель" class="header-logo-img">
+    </a>
+    <a href="#" class="header-link">НАЧАЛО</a>
+    <a href="#hc-intro" class="header-link">ИГРА</a>
+    <a href="#hc-trailer" class="header-link">ТРЕЙЛЕР</a>
+    <a href="#hc-art" class="header-link">АРТ</a>
+  </header>
+  <div class="header_button">
+    <label class="hb_content">
+      <input type="checkbox" id="headerResumeCheck" onclick="headerResume()">
+      <div class="checkmark">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </label>
+  </div>
+  <script>
+    function headerResume() {
+      var checkBox = document.getElementById("headerResumeCheck");
+      var text = document.getElementById("header")
+      if (checkBox.checked == true) {
+        text.style.display = "flex";
+      } else {
+        text.style.display = "none";
       }
-    </script>
-
-        <main class="main">
-
-   
-        <div class="hc-cover" id="hc-cover">
-            <img src="img/heaven-city-cover.png">
-        </div>
-
-        <div class="hc-intro" id="hc-intro" >           
-            <hr>
-                <h1>Heaven City - это текстовое приключение (текстовый квест или interactive fiction) в сеттинге киберпанка, постапокалипсиса и других... Вам пригодится воображение, которое позволит "рендерить" всё происходящее в игре. В ней лишь будут наброски. </h1>
-                        
-                <div class="hc-button"><a href="https://keyga.me/ru/app/190/heaven-city" target="_blank"><button class="btn-hover colored">Страница игры</button></a></div>
-            <hr>
-        </div>
-
-            <div class="hc-trailer" id="hc-trailer">
-                    <div class="gamepages__header">  
-                    <h2 class="wow fadeIn">Трейлер</h2></div>
-                    <div class="hc-video-w" ><iframe align="center" width="100%" height="768px" src="https://www.youtube.com/embed/lSrPb_yfzJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="hc-video" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}
+    }
+  </script>
+  <main class="main">
+    <div class="hc-cover" id="hc-cover">
+      <img src="img/heaven-city-cover.png">
+    </div>
+    <div class="hc-intro" id="hc-intro">
+      <hr>
+      <h1>Heaven City - это текстовое приключение (текстовый квест или interactive fiction) в сеттинге киберпанка, постапокалипсиса и других... Вам пригодится воображение, которое позволит "рендерить" всё происходящее в игре. В ней лишь будут наброски. </h1>
+      <div class="hc-button">
+        <a href="https://keyga.su/game/190/heaven-city" target="_blank">
+          <button class="btn-hover colored">Страница игры</button>
+        </a>
+      </div>
+      <hr>
+    </div>
+    <div class="hc-trailer" id="hc-trailer">
+      <div class="gamepages__header">
+        <h2 class="wow fadeIn">Трейлер</h2>
+      </div>
+      <div class="hc-video">
+        <iframe src="https://www.youtube.com/embed/lSrPb_yfzJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen srcdoc="
+                                        <style>*{padding:0;margin:0;overflow:hidden}
                     html,body{height:100%}
                     img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
                     span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}
                     </style>
-                    <a href=https://www.youtube.com/embed/lSrPb_yfzJk?autoplay=1>
-                    <img src=https://img.youtube.com/vi/lSrPb_yfzJk/hqdefault.jpg alt='Heaven city game trailer'>
-                    <span>▶</span>
-                    </a>"></iframe></div>
-            </div>
-
-            <div class="hc-art" id="hc-art">
-                <div class="container">
-                    <div class="gamepages__header"><h2  class="wow fadeIn">Арт</h2></div>
-                    <p class="wow fadeIn" data-wow-delay="0.5s">Некоторые концепт-арты(и не только), связанные с игрой</p>
-                    <div class="hc-art-list">
-                        <div class="hc-art-item"><img src="img/hcart1.png" height="500" width="300" class="hc-sart-item" alt="Abandoned destroyed orange buildings of heaven city" align="center"> </div>
-                        <div class="hc-art-item"><img src="img/hcart2.png" height="500" width="300" class="hc-sart-item" alt="Blue glow and similar buildings with parking lot with broken cars" align="center"></div>
-                        <div class="hc-art-item"><img src="img/banner2.png" height="600" width="1000"  align="center" class="hc-lart-item" alt="Grey and dark building far away with sun behind them and grey sky over them"></div>
-                    </div>
-                </div>
-
-            </div>
-        </main>
-
-
-
+                                        <a href=https://www.youtube.com/embed/lSrPb_yfzJk?autoplay=1>
+                                            <img src=https://img.youtube.com/vi/lSrPb_yfzJk/hqdefault.jpg alt='Heaven city game trailer'>
+                                                <span>▶</span>
+                                            </a>">
+        </iframe>
+      </div>
+    </div>
+    <div class="hc-art" id="hc-art">
+      <div class="gamepages__header">
+        <h2 class="wow fadeIn">Арт</h2>
+      </div>
+      <p class="wow fadeIn" data-wow-delay="0.5s">Некоторые концепт-арты(и не только), связанные с игрой</p>
+      <div class="hc-art-list">
+        <div class="hc-art-item">
+          <img src="img/hcart1.png" height="500" width="300" class="hc-sart-item" alt="Abandoned destroyed orange buildings of heaven city" align="center">
+        </div>
+        <div class="hc-art-item">
+          <img src="img/hcart2.png" height="500" width="300" class="hc-sart-item" alt="Blue glow and similar buildings with parking lot with broken cars" align="center">
+        </div>
+        <div class="hc-art-item">
+          <img src="img/banner2.png" height="600" width="1000" align="center" class="hc-lart-item" alt="Grey and dark building far away with sun behind them and grey sky over them">
+        </div>
+      </div>
+    </div>
+  </main>
   <footer class="footer">
-      <div class="footer-column">
-        <a href="#">Начало<span></span></a>
-        <ul>
-          <li></li>
-          <li>
-            <a href="https://itcagegames.github.io/blog" target="_blank"> Блог </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <a href="#info">Инфо<span></span></a>
-      </div>
-      <div class="footer-column">
-        <a href="#games">Игры<span></span></a>
-        <ul>
-          <li>
-            <a>Heaven City</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <a href="#contacts">Контакты<span></span></a>
-        <ul>
-          <li>
-            <a href="https://www.youtube.com/channel/UC5TiAyiNthdxJob6LEw4nHA" target="_blank"> Youtube </a>
-          </li>
-          <li>
-            <a href="https://discord.gg/6MNfcCfbJH" target="_blank"> Discord </a>
-          </li>
-          <li>
-            <a href="mailto:slining567@gmail.com" target="_blank"> Email </a>
-          </li>
-          <li>
-            <a href="https://dtf.ru/u/609905-inside-the-cage" target="_blank"> DTF.ru </a>
-          </li>
-          <li>
-            <a href="https://keyga.me/ru/store?developer=Inside%20The%20Cage" target="_blank"> Keyga.me </a>
-          </li>
-          <li>
-            <a href="https://inside-the-cage.itch.io/" target="_blank"> itch.io </a>
-          </li>
-          <li>
-            <a href="https://linktr.ee/insidethecagegames" target="_blank"> Linktree </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-column logo">
-        <ul>
-          <li class="footer-logo">
-            <img src="img/footer_cage.png" alt="Inside The Cage">
-          </li>
-        </ul>
-      </div>
+    <div class="footer-column">
+      <a href="index.html">Главная <span></span>
+      </a>
+      <ul>
+        <li></li>
+        <li>
+          <a href="blog.html" target="_blank"> Блог </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <a href="index.html#info">Инфо <span></span>
+      </a>
+    </div>
+    <div class="footer-column">
+      <a href="index.html#games">Игры <span></span>
+      </a>
+      <ul>
+        <li>
+          <a>Heaven City</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <a href="index.html#contacts">Контакты <span></span>
+      </a>
+      <ul>
+        <li>
+          <a href="https://www.youtube.com/channel/UC5TiAyiNthdxJob6LEw4nHA" target="_blank"> Youtube </a>
+        </li>
+        <li>
+          <a href="https://discord.gg/6MNfcCfbJH" target="_blank"> Discord </a>
+        </li>
+        <li>
+          <a href="mailto:slining567@gmail.com" target="_blank"> Email </a>
+        </li>
+        <li>
+          <a href="https://dtf.ru/u/609905-inside-the-cage" target="_blank"> DTF.ru </a>
+        </li>
+        <li>
+          <a href="https://keyga.me/ru/store?developer=Inside%20The%20Cage" target="_blank"> Keyga.me </a>
+        </li>
+        <li>
+          <a href="https://inside-the-cage.itch.io/" target="_blank"> itch.io </a>
+        </li>
+        <li>
+          <a href="https://linktr.ee/insidethecagegames" target="_blank"> Linktree </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-column logo">
+      <ul>
+        <li class="footer-logo">
+          <img src="img/footer_cage.png" alt="Inside The Cage">
+        </li>
+      </ul>
+    </div>
   </footer>
-
-        <script type="text/javascript">
-         wow = new WOW({
-        mobile:       true,
-        live:         true,
-        callback:     function(box) {
+  <script type="text/javascript">
+    wow = new WOW({
+      mobile: true,
+      live: true,
+      callback: function(box) {
         console.log('animation started');
-            }
-        });
-        wow.init();
-        </script>
-    </body>
-    <a href="#" title="Вернуться к началу" class="topbutton"><img src="img/button-up.png"></a>
+      }
+    });
+    wow.init();
+  </script>
+ </body>
+ <a href="#" title="Вернуться к началу" class="topbutton"><img src="img/button-up.png"></a>
  </html>
