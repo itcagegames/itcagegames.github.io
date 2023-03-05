@@ -37,191 +37,180 @@
     </head>
 
     <body>
-        <div class="preloader">
-            <div class="spinner"> </div>
+      <div class="preloader">
+        <div class="spinner"></div>
+      </div>
+      <script>
+        window.onload = function() {
+          document.body.classList.add('loaded_hiding');
+          window.setTimeout(function() {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+          }, 500);
+        }
+      </script>
+      <header class="header" id="header">
+        <a href="../index.html">
+          <img class="header-logo" src="../headerlogo.png" alt="Приветствую! Это Inside The Cage Игровой разработчик и издатель" class="header-logo-img">
+        </a>
+        <a href="#" class="header-link">НАЧАЛО</a>
+        <a href="../index.html#info" class="header-link">ИНФО</a>
+        <a href="../index.html#games" class="header-link">ИГРЫ</a>
+        <a href="../index.html#contacts" class="header-link">КОНТАКТЫ</a>
+        <a href="../blog.html" class="header-link" id="last-header-link" target="_blank">БЛОГ</a>
+      </header>
+      <div class="header_button">
+        <label class="hb_content">
+          <input type="checkbox" id="headerResumeCheck" onclick="headerResume()">
+          <div class="checkmark">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </label>
+      </div>
+      <script>
+        function headerResume() {
+          var checkBox = document.getElementById("headerResumeCheck");
+          var text = document.getElementById("header")
+          if (checkBox.checked == true) {
+            text.style.display = "flex";
+          } else {
+            text.style.display = "none";
+          }
+        }
+      </script>
+      <main>
+        <div class="hc-intro" id="hc-intro">
+          <div class="heaven-city-cover">
+            <img src="../img/heaven-city-cover.png" style="height: 90%;width: 90%;">
+          </div>
         </div>
-     <script>window.onload = function () {
-         document.body.classList.add('loaded_hiding');
-         window.setTimeout(function () {
-         document.body.classList.add('loaded');
-         document.body.classList.remove('loaded_hiding');
-         }, 500);
-         }
-        </script>
-       
-        
-    
-     <header class="header" id="header">
-            <div class="container">
-
-                <div class="header-wrapper">
-                    <div class="header-logo">
-                        <a href="https://itcagegames.github.io/">
-                        <img src="../headerlogo.png" alt="Приветствую! Это Inside The Cage Игровой разработчик и издатель" class="header-logo-img" width="77" height="74"></a>
-                    </div>
-
-                    <nav class="header-nav">
-                        <a href="https://itcagegames.github.io/#intro" class="header-link">НАЧАЛО</a>
-                        <a href="https://itcagegames.github.io/#info" class="header-link">ИНФО</a>
-                        <a href="https://itcagegames.github.io/#games" class="header-link">ИГРЫ</a>
-                        <a href="https://itcagegames.github.io/#contacts" class="header-link">КОНТАКТЫ</a>
-                        <a href="https://itcagegames.github.io/blog" class="header-link" target="_blank">БЛОГ</a>
-                    </nav>
-                    
-                    
-
-                </div> 
-                
-                    
-            </div> 
-         </header>
-     <div class="header_button"></header><div id="menuToggle"><input type="checkbox" id="myCheck" onclick="headerActivate()"> <span></span><span></span><span></span></div></div>
-
-        <script>
-            function headerActivate() {
-                var checkBox = document.getElementById("myCheck");
-                var text = document.getElementById("header")
-                if (checkBox.checked == true){
-                    text.style.display = "block";
-                } 
-                else {
-                    text.style.display = "none";
-                }
-            }
-        </script>
-     <main>
-
-         <div class="hc-intro" id="hc-intro">
-            
-            <div class="container" >
-
-                <div class="heaven-city-cover"><img src="../img/heaven-city-cover.png" style="height: 90%;width: 90%;"></div>
+        <div class="article">
+          <div class="artc-content-info">
+            <h1>Heaven City наконец-то выпущена!</h1>
+            <div class="publish-data">
+              <p>
+                <i class="dark-red">■</i> ОПУБЛИКОВАНО: 26.09.2022
+              </p>
             </div>
-         </div>
-
-         <section class="article">
-         <div class="container">
-            <div class="news-content-info">
-                     <h1>Heaven City наконец-то выпущена!</h1>
-                     <div class="publish-data">
-                         <p><i class="dark-red">■</i> ОПУБЛИКОВАНО: 26.09.2022</p>
-                     </div>
-                     <hr>
-                    
-            </div>
-            <div class="news-content">
-                <h2>Heaven City наконец-то выпущена!</h2>
-                <p>Это были непростые, как этот год, путь и разработка игры, которая, как оказалась, не была потрачена впустую вместе с силами, потраченными на неё. Игра должна была выйти ещё в начале февраля (если быть точнее 6-ого числа), в итоге вышла на 6-7 месяцев, прям как Cyberpunk 2077.</p>
-                <br><p>История разработки игры начинается в середине декабря прошлого года, то есть 2021-ого. До этого были несколько других концепций и идей насчёт игр, но решено было остановиться на текстовом квесте. Соответственно, игровой движок был RenPy (Ренпай). Лёгкий ЯП, оптимизация, плагины и т. д. При этом у игры до этого также была другая концепция: это мог бы быть 2D Pixel Art симулятор исследования (или, как говорят, ходьбы). Большая часть игры проходила в заброшенных метро, в общем, в лучших традициях диггерства. При этом последнее присутствует отчасти в итоговом концепте. Итоговый концепт из себя представляет текстовый квест и смесь сеттингов: постапокалипсиса — заброшенного райского города, киберпанка и немного сюрреализма с хоррором. <b>Огромная часть игры была вдохновлена недооценённым sci-fi фильмом «Archive« (2020) или »Мой создатель».</b> Так что, параллели можно увидеть…</p>
-                <br><p>Сценарий и небольшой визуал (всё-таки это текстовый квест) игры был сделан ближе к концу января этого года. Остальное — доработки: добавление ещё визуала, исправление багов и косяков, локализация на английский язык и так далее. К концу января игра была уже готова. Были готовы и соцсети и сервисы для продвижения текстового квеста в начале февраля. Была готова и страничка на itch.io (кстати, она до сих пор так и валяется там в черновиках: последнее изменение — 22 марта 2022 года). Была проблема с PayPal, т. к. сайт только его поддерживал и Stripe. Пока тех. поддержка решали проблемы с картой две недели, наступило 24 февраля, и… всё пошло через одно место.</p>
-                <div class="news-video">
-                    <iframe  width="85%" height="640" src="https://www.youtube.com/embed/wyEz-jnAQzw" allow="picture-in-picture" allowfullscreen srcdoc="<style>*{padding:0;margin:0;overflow:hidden}
+            <hr>
+          </div>
+          <div class="artc-content">
+            <h2>Heaven City наконец-то выпущена!</h2>
+            <p>Это были непростые, как этот год, путь и разработка игры, которая, как оказалась, не была потрачена впустую вместе с силами, потраченными на неё. Игра должна была выйти ещё в начале февраля (если быть точнее 6-ого числа), в итоге вышла на 6-7 месяцев, прям как Cyberpunk 2077.</p>
+            <br>
+            <p>История разработки игры начинается в середине декабря прошлого года, то есть 2021-ого. До этого были несколько других концепций и идей насчёт игр, но решено было остановиться на текстовом квесте. Соответственно, игровой движок был RenPy (Ренпай). Лёгкий ЯП, оптимизация, плагины и т. д. При этом у игры до этого также была другая концепция: это мог бы быть 2D Pixel Art симулятор исследования (или, как говорят, ходьбы). Большая часть игры проходила в заброшенных метро, в общем, в лучших традициях диггерства. При этом последнее присутствует отчасти в итоговом концепте. Итоговый концепт из себя представляет текстовый квест и смесь сеттингов: постапокалипсиса — заброшенного райского города, киберпанка и немного сюрреализма с хоррором. <strong>Огромная часть игры была вдохновлена недооценённым sci-fi фильмом «Archive« (2020) или »Мой создатель».</strong> Так что, параллели можно увидеть… </p>
+            <br>
+            <p>Сценарий и небольшой визуал (всё-таки это текстовый квест) игры был сделан ближе к концу января этого года. Остальное — доработки: добавление ещё визуала, исправление багов и косяков, локализация на английский язык и так далее. К концу января игра была уже готова. Были готовы и соцсети и сервисы для продвижения текстового квеста в начале февраля. Была готова и страничка на itch.io (кстати, она до сих пор так и валяется там в черновиках: последнее изменение — 22 марта 2022 года). Была проблема с PayPal, т. к. сайт только его поддерживал и Stripe. Пока тех. поддержка решали проблемы с картой две недели, наступило 24 февраля, и… всё пошло через одно место.</p>
+            <div class="artc-video">
+              <iframe width="85%" height="640" src="https://www.youtube.com/embed/wyEz-jnAQzw" allow="picture-in-picture" allowfullscreen srcdoc="
+                                                <style>*{padding:0;margin:0;overflow:hidden}
                     html,body{height:100%}
                     img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
                     span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}
                     </style>
-                    <a href=https://www.youtube.com/embed/wyEz-jnAQzw?autoplay=1>
-                    <img src=https://img.youtube.com/vi/wyEz-jnAQzw/hqdefault.jpg alt='Demo video'>
-                    <span>▶</span>
-                    </a>"></iframe>                    
-                    <br><i class="video-descr">Я примерно также себя чувствовал 24 февраля, как этот трейдер, хоть и далёк от его темы.</i> 
-                </div>
-                
-                <br><p>Не буду описывать всё в подробностях, но пришёл в себя и осмыслил всё только в середине этого лета, в июле. Подрабатывал этим летом и дизайнером, и рерайтером, и т. д., но этого всё равно не хватало и не делало меня счастливым и удовлетворённым. В конце августа я начал искать русские аналоги магазинов (я и весной и феврале старался их найти, несмотря на маленькое свободное время) , ибо так уже продолжаться не должно. В итоге нашёл RuStore — русский аналог Google Play с неплохим дизайном. Я сразу порадовался, думал оптимизировать текстовый квест для телефонов, как сразу же огорчился. Самозанятым нельзя выкладывать игру, а если хочешь выложить, нужно ещё зарегистрироваться в ВК, который я вообще не люблю и даже не стал регистрироваться ради продвижения текстового квеста там.</p>
-                <br><p>Однако, на следующий день я нашёл чудо, настоящую панацею под названием <b>«Keyga.me»</b>, благодаря запросу «русский аналог стима». Честно я был в шоке, как такой сайт остался незамеченным. Отличные дизайн, задумка и условия для разработчиков и т. д. В общем и целом я разобрался в магазине, создал страницу для игры, опубликовал видео по ней на ютуб и на этот сайт игру.</p>
-                <br><p >Я, конечно, не думаю, что игра шедевр, но на неё было потрачено множество сил и стараний. Хочется сказать, никогда не теряйте надежду; каждый день — борьба, и ты должен выигрывать, так как ты — боец… Ну, и по классике:</p>
-                
-                <div class="news-quote">
-                <blockquote>
-                    <i class="dark-red-quote">«</i>Это моя первая игра, не судите строго<i class="dark-red-quote">»</i>
-                </blockquote>
-
-
-                <i class="news-prim">Народная притча</i>
-                </div>
-                <br><p><b>Что касается сайта Keyga.me, то сервису нужно развиваться в плане маркетинга и охвата. Получается какой-то «скромный маркетинг». Я узнал о нём чисто случайно, из гугла. Желаю команде сайта всего самого лучшего.</b></p>
-                <br><p class="last-one"><b>Надеюсь, игра вам понравится!</b></p>
-
-             </div>
+                                                <a href=https://www.youtube.com/embed/wyEz-jnAQzw?autoplay=1>
+                                                    <img src=https://img.youtube.com/vi/wyEz-jnAQzw/hqdefault.jpg alt='Demo video'>
+                                                        <span>▶</span>
+                                                    </a>">
+              </iframe>
+              <br>
+              <i class="video-descr">Я примерно также себя чувствовал 24 февраля, как этот трейдер, хоть и далёк от его темы.</i>
+            </div>
+            <br>
+            <p>Не буду описывать всё в подробностях, но пришёл в себя и осмыслил всё только в середине этого лета, в июле. Подрабатывал этим летом и дизайнером, и рерайтером, и т. д., но этого всё равно не хватало и не делало меня счастливым и удовлетворённым. В конце августа я начал искать русские аналоги магазинов (я и весной и феврале старался их найти, несмотря на маленькое свободное время) , ибо так уже продолжаться не должно. В итоге нашёл RuStore — русский аналог Google Play с неплохим дизайном. Я сразу порадовался, думал оптимизировать текстовый квест для телефонов, как сразу же огорчился. Самозанятым нельзя выкладывать игру, а если хочешь выложить, нужно ещё зарегистрироваться в ВК, который я вообще не люблю и даже не стал регистрироваться ради продвижения текстового квеста там.</p>
+            <br>
+            <p>Однако, на следующий день я нашёл чудо, настоящую панацею под названием <strong>«Keyga.me»</strong>, благодаря запросу «русский аналог стима». Честно я был в шоке, как такой сайт остался незамеченным. Отличные дизайн, задумка и условия для разработчиков и т. д. В общем и целом я разобрался в магазине, создал страницу для игры, опубликовал видео по ней на ютуб и на этот сайт игру. </p>
+            <br>
+            <p>Я, конечно, не думаю, что игра шедевр, но на неё было потрачено множество сил и стараний. Хочется сказать, никогда не теряйте надежду; каждый день — борьба, и ты должен выигрывать, так как ты — боец… Ну, и по классике:</p>
+            <div class="artc-quote">
+              <blockquote>
+                <i class="dark-red-quote">«</i>Это моя первая игра, не судите строго <i class="dark-red-quote">»</i>
+              </blockquote>
+              <i class="artc-prim">Народная притча</i>
+            </div>
+            <br>
+            <p>
+              <strong>Что касается сайта Keyga.me, то сервису нужно развиваться в плане маркетинга и охвата. Получается какой-то «скромный маркетинг». Я узнал о нём чисто случайно, из гугла. Желаю команде сайта всего самого лучшего.</strong>
+            </p>
+            <br>
+            <p class="last-one">
+              <strong>Надеюсь, игра вам понравится!</strong>
+            </p>
           </div>
-         </section>
-         <section class="hc-article-trailer" id="hc-trailer">
-            <div class="container">
-             <div class="news-video-after"><iframe width="75%" height="768" src="https://www.youtube.com/embed/lSrPb_yfzJk" allow=" picture-in-picture" allowfullscreen class="hc-video" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}
-                html,body{height:100%}
-                img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
-                span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}
-                </style>
-                <a href=https://www.youtube.com/embed/lSrPb_yfzJk?autoplay=1>
-                <img src=https://img.youtube.com/vi/lSrPb_yfzJk/hqdefault.jpg alt='Heaven city game trailer'>
-                <span>▶</span>
-                </a>"></iframe>
-             </div>                    
-            </div>
-            </section>
-
-     </main>
-     
-     <footer class="footer">
-     <div class="container">
-        <div class="row">
-            <div class="footer-col">
-                <h4><a href="#" class="sl">Главная</a></h4>
-                <ul>
-                    <li><a href="https://itcagegames.github.io/blog" target="_blank" >
-                    Блог</a></li>
-                    
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4><a href="#info" class="fl">Инфо</a></h4>
-            </div>
-            <div class="footer-col">
-                <h4><a href="#games" class="fl">Игры</a></h4>
-                <ul>
-                    <li><a href="https://itcagegames.github.io/heaven-city" >Heaven City</a></li>
-                    
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4 ><a href="#contacts"  class="el">Контакты</a></h4>
-                
-                                <ul>
-                                <li><a href="https://www.youtube.com/channel/UC5TiAyiNthdxJob6LEw4nHA" target="_blank" >
-                                Youtube
-                                </a></li>
-
-                                <li><a href="https://discord.gg/6MNfcCfbJH" target="_blank" >
-                                Discord
-                                </a></li>
-                                <li><a href="mailto:slining567@gmail.com" target="_blank" >
-                                Email
-                                </a></li>
-                                <li><a href="https://dtf.ru/u/609905-inside-the-cage" target="_blank" >
-                                DTF.ru
-                                </a></li>
-                                <li><a href="https://keyga.me/ru/store?developer=Inside%20The%20Cage" target="_blank" >
-                                Keyga.me
-                                </a></li>
-                                <li><a href="https://inside-the-cage.itch.io/" target="_blank" >
-                                itch.io
-                                </a></li>
-                                <li><a href="https://linktr.ee/insidethecagegames" target="_blank" >
-                                Linktree
-                                </a></li>
-                                </ul>
-                
-            </div>
-            <div class="footer-col">
-               <ul>
-                    <li class="footer-logo">
-                        <img src="../img/footer_cage.png" alt="Inside The Cage" class="footer-logo-img">
-                     </li>
-                </ul>
-            </div>
         </div>
-     </div>
-     </footer>
-        <a href="#" title="Вернуться к началу" class="topbutton"><img src="../img/button-up.png"></a>
+        <div class="artc-trailer">
+          <iframe src="https://www.youtube.com/embed/lSrPb_yfzJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen srcdoc="<style>*{padding:0;margin:0;overflow:hidden}
+                    html,body{height:100%}
+                    img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+                    span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}
+                    </style>
+                    <a href=https://www.youtube.com/embed/lSrPb_yfzJk?autoplay=1><img src=https://img.youtube.com/vi/lSrPb_yfzJk/hqdefault.jpg alt='Heaven city game trailer'><span>▶</span></a>">
+          </iframe>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer-column">
+          <a href="../index.html">Главная <span></span>
+          </a>
+          <ul>
+            <li></li>
+            <li>
+              <a href="../blog.html" target="_blank"> Блог </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <a href="../index.html#info">Инфо <span></span>
+          </a>
+        </div>
+        <div class="footer-column">
+          <a href="../index.html#games">Игры <span></span>
+          </a>
+          <ul>
+            <li>
+              <a href="../heaven-city.html">Heaven City</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <a href="../index.html#contacts">Контакты <span></span>
+          </a>
+          <ul>
+            <li>
+              <a href="https://www.youtube.com/channel/UC5TiAyiNthdxJob6LEw4nHA" target="_blank"> Youtube </a>
+            </li>
+            <li>
+              <a href="https://discord.gg/6MNfcCfbJH" target="_blank"> Discord </a>
+            </li>
+            <li>
+              <a href="mailto:slining567@gmail.com" target="_blank"> Email </a>
+            </li>
+            <li>
+              <a href="https://dtf.ru/u/609905-inside-the-cage" target="_blank"> DTF.ru </a>
+            </li>
+            <li>
+              <a href="https://keyga.me/ru/store?developer=Inside%20The%20Cage" target="_blank"> Keyga.me </a>
+            </li>
+            <li>
+              <a href="https://inside-the-cage.itch.io/" target="_blank"> itch.io </a>
+            </li>
+            <li>
+              <a href="https://linktr.ee/insidethecagegames" target="_blank"> Linktree </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column logo">
+          <ul>
+            <li class="footer-logo">
+              <img src="../img/footer_cage.png" alt="Inside The Cage">
+            </li>
+          </ul>
+        </div>
+      </footer>
+      <a href="#" title="Вернуться к началу" class="topbutton">
+        <img src="../img/button-up.png">
+      </a>
     </body>
     </html>
