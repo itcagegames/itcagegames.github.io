@@ -116,7 +116,7 @@ a:visited {
   padding: 10px;
   position: fixed;
   top: 150px;
-  right: 60px;
+  right: 10px;
 }
 
 .header_button {
@@ -261,7 +261,11 @@ a:visited {
 /* Intro */
 
 .intro {
+  max-width: 670px;
+  margin: 0 auto;
   text-align: center;
+  min-height: 100vh;
+  margin-bottom: 350px;
 }
 
 .container {
@@ -272,13 +276,11 @@ a:visited {
 
 .main-logo {
   margin-top: 400px;
-  width: 309px;
+  max-width: 60%;
+  height: auto;
 }
 
 .intro-title {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 80%;
   margin-top: 45px;
   src: url(../fonts/Naga);
 
@@ -286,7 +288,7 @@ a:visited {
   font-style: normal;
   font-weight: 400;
   font-size: 43px;
-
+  word-break: break-word;
   line-height: 62px;
 
   color: #ffffff;
@@ -299,19 +301,21 @@ a:visited {
 /* Info */
 
 .info {
-  margin-top: 375px;
+  min-height: 50vh;
+  margin-bottom: 350px;
 }
 
 .info-rect {
   margin-top: 60px;
   margin-left: 46px;
-  width: 70%;
-  max-width: 653px;
+  max-width: 68%;
+  width: 653px;
   background-color: #a20303;
   border: 16px solid #590000;
   /*padding-left: 22px;
     padding-top: 8px;*/
   padding: 15px;
+  word-break: break-word;
 }
 
 .info-rect h3 {
@@ -343,9 +347,10 @@ a:visited {
 /* Games */
 
 .games {
-  margin-top: 350px;
   /*background: url(../img/rounds3.png) no-repeat;
     background-size: cover;*/
+  min-height: 50vh;
+  margin-bottom: 250px;
 }
 
 .games__header {
@@ -503,7 +508,8 @@ a:visited {
 /* Контакты */
 
 .contacts {
-  margin-top: 400px;
+  min-height: 50vh;
+  margin-bottom: 250px;
 }
 
 .contacts-icons {
@@ -623,22 +629,6 @@ a:visited {
 
 /*Heaven City Game Page*/
 
-.gamepages__header {
-  width: 100%;
-  max-width: 950px;
-  margin: 0 auto 50px;
-
-  text-align: center;
-
-  font-family: "Naga";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 31px;
-  line-height: 65px;
-
-  color: #ffffff;
-}
-
 .hc-cover {
   padding-top: 100px;
   padding-bottom: 0px;
@@ -652,13 +642,12 @@ a:visited {
 
 .hc-intro {
   margin-top: 100px;
+  min-height: 50vh;
+  margin-bottom: 250px;
 }
 
 .hc-intro h1 {
-  line-height: 31px;
-  width: 100%;
-  max-width: 1135px;
-  margin: 0 auto;
+  line-height: 38px;
   margin-top: 45px;
   src: url(../fonts/Naga);
   font-family: "Naga";
@@ -667,6 +656,13 @@ a:visited {
   font-size: 32px;
   text-align: center;
   color: #ffffff;
+  word-break: break-word;
+}
+
+.hc-intro-title{
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .hc-intro hr {
@@ -724,9 +720,6 @@ a:visited {
   box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
 }
 
-.hc-trailer {
-  margin-top: 200px;
-}
 
 .hc-video {
   /*    text-align: center;*/
@@ -754,9 +747,15 @@ a:visited {
   height: 95%;
 }
 
-.hc-art {
-  margin-top: 180px;
-}
+  .hc-trailer {
+    min-height: 50vh;
+    margin-bottom: 300px;
+  }
+
+  .hc-art {
+    min-height: 100vh;
+    margin-bottom: 250px;
+  }
 
 .hc-art p {
   src: url(../fonts/Naga.ttf);
@@ -785,11 +784,18 @@ a:visited {
   border-color: #f2f2f2;
   border-radius: 20px;
   box-shadow: 0px 0px 15px #ffffff;
-  width: 90%;
 }
+
 .hc-sart-item {
   margin-bottom: 100px;
+
+  width: 90%;
 }
+
+.hc-lart-item {
+  width: 89%;
+  height: auto;
+  }
 
 /*Blog | Inside The Cage Games*/
 .page-news {
@@ -854,9 +860,8 @@ a:visited {
 
   border-right: none;
   border-left: none;
-}
 
-.article {
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -870,6 +875,7 @@ a:visited {
   margin: 1rem;
   max-width: 822px;
   text-align: left;
+  word-break: break-word;
 }
 
 .article h1 {
@@ -884,6 +890,7 @@ p {
   margin-left: 2rem;
   margin-right: 2rem;
   margin-top: 1rem;
+  word-break: break-word;
 }
 
 .article img {
@@ -1056,14 +1063,10 @@ p {
     transition: 0.5s;
   }
 
-  .main-logo {
-    width: 279px;
-  }
-
   .intro-title {
     margin-top: 31px;
-    font-size: 39px;
-    line-height: 52px;
+    font-size: 40px;
+    line-height: 58px;
   }
 
   .info-rect h3 {
@@ -1119,20 +1122,17 @@ p {
     padding: 0 39px;
   }
 
-  .hc-intro h1 {
-    max-width: 903px;
-    font-size: 28px;
-  }
-
-  .gamepages__header {
-    font-size: 27px;
-  }
 
   .topbutton {
     transform: scale(0.9, 0.9);
     -webkit-transform: scale(0.9, 0.9);
     -moz-transform: scale(0.9, 0.9);
     -o-transform: scale(0.9, 0.9);
+  }
+
+  .hc-intro h1 {
+    font-size: 29px;
+    line-height: 35px;
   }
 
   .hc-art p {
@@ -1176,14 +1176,9 @@ p {
     -o-transform: scale(1.4);
   }
 
-  .main-logo {
-    width: 249px;
-  }
-
   .intro-title {
-    margin-top: 21px;
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 36px;
+    line-height: 52px;
   }
 
   .info-rect h3 {
@@ -1270,17 +1265,13 @@ p {
     height: 130px;
   }
 
-  .hc-intro h1 {
-    max-width: 903px;
-    font-size: 26px;
-  }
-
   .btn-hover {
     font-size: 19px;
   }
 
-  .gamepages__header {
+  .hc-intro h1 {
     font-size: 25px;
+    line-height:31px;
   }
 
   .hc-art p {
@@ -1343,13 +1334,9 @@ p {
     width: 35px;
   }
 
-  .main-logo {
-    width: 219px;
-  }
-
   .intro-title {
-    font-size: 27px;
-    line-height: 32px;
+    font-size: 32px;
+    line-height: 46px;
   }
 
   .info-rect {
@@ -1359,7 +1346,7 @@ p {
   }
 
   .info-rect h3 {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 30px;
   }
 
@@ -1442,17 +1429,14 @@ p {
     padding-top: 0px;
   }
 
-  .hc-intro h1 {
-    max-width: 903px;
-    font-size: 20px;
-  }
 
   .btn-hover {
     font-size: 18px;
   }
 
-  .gamepages__header {
-    font-size: 19px;
+  .hc-intro h1 {
+    font-size: 21px;
+    line-height:27px;
   }
 
   .hc-art p {
@@ -1532,7 +1516,6 @@ p {
   .header_button {
     height: 33px;
     width: 33px;
-    right: 10px;
     border: 5px solid #ba121b;
     top: 245px;
   }
@@ -1568,18 +1551,9 @@ p {
     margin-bottom: 6px;
   }
 
-  .main-logo {
-    width: 124px;
-  }
-
   .intro-title {
-    font-size: 17px;
-    line-height: 22px;
-  }
-
-  .info {
-    /* margin-top: 375px; */
-    height: 679px;
+    font-size: 22px;
+    line-height: 34px;
   }
 
   .info-rect {
@@ -1672,32 +1646,19 @@ p {
     display: block;
   }
 
-  .hc-intro h1 {
-    max-width: 903px;
-    font-size: 16px;
-  }
-
   .btn-hover {
     width: 55%;
 
     font-size: 17px;
   }
 
-  .gamepages__header {
-    font-size: 15px;
-  }
-  .hc-trailer {
-    margin-top: 125px;
-  }
 
   .hc-video iframe {
     border: 7px solid;
     border-color: #ffffff;
   }
 
-  .hc-art {
-    margin-top: 125px;
-  }
+
 
   .hc-art p {
     font-size: 12px;
@@ -1711,22 +1672,9 @@ p {
     margin-bottom: 45px;
   }
 
-  .hc-sart-item,
-  .hc-lart-item {
-    border: 4px solid;
-    border-color: #f2f2f2;
-    border-radius: 20px;
-    box-shadow: 0px 0px 15px #ffffff;
-  }
-
   .hc-sart-item {
-    height: 80%;
-    width: 50%;
-  }
-
-  .hc-lart-item {
-    height: 140%;
-    width: 90%;
+    width: 70%;
+    height: auto;
   }
 
   .news h3 {
