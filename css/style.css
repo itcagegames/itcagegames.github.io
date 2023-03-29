@@ -1080,8 +1080,8 @@ a:visited {
 
 @media (max-width: 1200px) {
   .header-logo {
-    width: 6%;
-    padding: 24px;
+    width: 62px;
+    padding: 21px;
   }
 
   .header-link {
@@ -1207,7 +1207,8 @@ a:visited {
   }
 
   .header-logo {
-    padding: 21px;
+    width: 52px;
+    padding: 17px;
   }
 
   .header-logo:hover {
@@ -1376,7 +1377,7 @@ a:visited {
   }
 
   .header-logo {
-    padding: 18px;
+    width: 42px;
   }
 
   .intro-title {
@@ -1585,9 +1586,8 @@ a:visited {
   }
 
   .header-logo {
-    max-width: 41px;
-    max-height: 40px;
     padding: 5px;
+    width: 52px;
   }
 
   .header-link {
