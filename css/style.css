@@ -203,18 +203,26 @@ a:visited {
   top: 0;
   left: 0;
   width: 100%;
-  background: url(../img/header.png) no-repeat center;
-  background-size: 100% 100%;
   z-index: 10;
+}
+
+.header-panel {
+  background: url(../img/header.svg) no-repeat center;
+  background-size: 100% auto;
 
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
 }
 
+
+
 .header-logo {
-  max-width: 77px;
-  max-height: 74px;
+  width: 77px;
+  height: auto;
 
   padding: 29px;
   transition: all 0.5s ease-out;
@@ -258,13 +266,23 @@ a:visited {
   transition: 0.5s;
 }
 
+.scroll-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 6px;
+  width: 0%;
+  background-color: #eb3636;
+  transition: width 0.5s ease-in-out;
+}
+
 /* Intro */
 
 .intro {
   max-width: 670px;
   margin: 0 auto;
   text-align: center;
-  min-height: 100vh;
+  min-height: 75vh;
   margin-bottom: 350px;
 }
 
@@ -302,7 +320,7 @@ a:visited {
 
 .info {
   min-height: 50vh;
-  margin-bottom: 350px;
+  margin-bottom: 325px;
 }
 
 .info-rect {
@@ -642,7 +660,7 @@ a:visited {
 
 .hc-intro {
   margin-top: 100px;
-  min-height: 50vh;
+  min-height: 40vh;
   margin-bottom: 250px;
 }
 
@@ -753,7 +771,7 @@ a:visited {
   }
 
   .hc-art {
-    min-height: 100vh;
+    min-height: 60vh;
     margin-bottom: 250px;
   }
 
@@ -796,6 +814,8 @@ a:visited {
   width: 89%;
   height: auto;
   }
+
+  
 
 /*Blog | Inside The Cage Games*/
 .page-news {
@@ -867,6 +887,7 @@ a:visited {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  margin-bottom: 250px;
   text-align: center;
 }
 
@@ -874,6 +895,7 @@ a:visited {
 .artc-content {
   margin: 1rem;
   max-width: 822px;
+  width: 100%;
   text-align: left;
   word-break: break-word;
 }
@@ -885,8 +907,10 @@ a:visited {
 }
 
 .article h2,
-h3,
-p {
+.article h3,
+.article p,
+.artc-content li, 
+.artc-content ol{
   margin-left: 2rem;
   margin-right: 2rem;
   margin-top: 1rem;
@@ -920,6 +944,7 @@ p {
 
   color: #ffffff;
 }
+
 .dark-red {
   color: #af1414;
   font-size: 20px;
@@ -945,7 +970,16 @@ p {
   color: #ffffff;
 }
 
-.artc-content p {
+.artc-content h3 {
+  font-size: 27px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+.artc-content p, .artc-content li {
   width: 100%;
   font-weight: 400;
   font-size: 20px;
@@ -954,6 +988,10 @@ p {
   line-height: 30px;
 
   color: #ffffff;
+}
+
+.artc-dots {
+  list-style-type: disc;
 }
 
 .artc-content strong {
@@ -1015,7 +1053,6 @@ p {
 }
 
 .artc-trailer {
-  margin-top: 125px;
   /*    text-align: center;*/
   padding-top: 60px;
   position: relative;
@@ -1043,8 +1080,8 @@ p {
 
 @media (max-width: 1200px) {
   .header-logo {
-    width: 72px;
-    height: 69px;
+    width: 6%;
+    padding: 24px;
   }
 
   .header-link {
@@ -1169,6 +1206,10 @@ p {
     transition: 0.5s;
   }
 
+  .header-logo {
+    padding: 21px;
+  }
+
   .header-logo:hover {
     transform: scale(1.4);
     -webkit-transform: scale(1.4);
@@ -1290,7 +1331,11 @@ p {
     font-size: 28px;
   }
 
-  .artc-content p {
+  .artc-content h3 {
+    font-size: 24px;
+  }
+
+  .artc-content p, .artc-content li{
     max-width: 92%;
     font-size: 18px;
   }
@@ -1309,10 +1354,6 @@ p {
 }
 
 @media (max-width: 767px) {
-  .header {
-    background-size: 220%;
-  }
-
   .header-link {
     font-size: 15px;
   }
@@ -1332,6 +1373,10 @@ p {
   .header_button {
     height: 35px;
     width: 35px;
+  }
+
+  .header-logo {
+    padding: 18px;
   }
 
   .intro-title {
@@ -1491,7 +1536,11 @@ p {
     font-size: 24px;
   }
 
-  .artc-content p {
+  .artc-content h3 {
+    font-size: 20px;
+  }
+
+  .artc-content p, .artc-content li{
     font-size: 17px;
   }
   .artc-content iframe {
@@ -1520,8 +1569,7 @@ p {
     top: 245px;
   }
 
-  .header {
-    /*    background-size: 553px 113px;*/
+  .header-panel {
     background-image: none;
     background: rgb(0, 0, 0);
     background: linear-gradient(
@@ -1646,6 +1694,10 @@ p {
     display: block;
   }
 
+  .hc-intro h1 {
+    font-size: 18px;
+  }
+
   .btn-hover {
     width: 55%;
 
@@ -1698,8 +1750,8 @@ p {
     margin-right: 1rem;
   }
   .article h2,
-  h3,
-  p {
+  .article h3,
+  .article p {
     margin-left: 1rem;
     margin-right: 1rem;
     margin-top: 1rem;
@@ -1724,9 +1776,17 @@ p {
     font-size: 20px;
   }
 
-  .artc-content p {
+  .artc-content h3 {
+    font-size: 18px;
+  }
+
+  .artc-content p, .artc-content li{
     font-size: 16px;
     width: 82%;
+  }
+
+  .artc-content li{
+    margin-left: 1rem;
   }
   .video-descr {
     color: #ffffff;
