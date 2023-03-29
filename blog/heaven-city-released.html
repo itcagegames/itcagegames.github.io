@@ -50,15 +50,24 @@
         }
       </script>
       <header class="header" id="header">
-        <a href="../index.html">
-          <img class="header-logo" src="../headerlogo.png" alt="Приветствую! Это Inside The Cage Игровой разработчик и издатель" class="header-logo-img">
-        </a>
-        <a href="#" class="header-link">НАЧАЛО</a>
-        <a href="../index.html#info" class="header-link">ИНФО</a>
-        <a href="../index.html#games" class="header-link">ИГРЫ</a>
-        <a href="../index.html#contacts" class="header-link">КОНТАКТЫ</a>
-        <a href="../blog.html" class="header-link" id="last-header-link" target="_blank">БЛОГ</a>
+        <div class="header-panel">
+          <a href="../index.html">
+            <img class="header-logo" src="../headerlogo.png" alt="Приветствую! Это Inside The Cage Игровой разработчик и издатель" class="header-logo-img">
+          </a>
+          <a href="#" class="header-link">НАЧАЛО</a>
+          <a href="../index.html#info" class="header-link">ИНФО</a>
+          <a href="../index.html#games" class="header-link">ИГРЫ</a>
+          <a href="../index.html#contacts" class="header-link">КОНТАКТЫ</a>
+          <a href="../blog.html" class="header-link" id="last-header-link" target="_blank">БЛОГ</a>
+        <div class="scroll-indicator"></div>
       </header>
+      <script>
+        window.addEventListener("scroll", function () {
+          var scrollIndicator = document.querySelector(".scroll-indicator");
+          var scrolled = (window.scrollY / (document.body.offsetHeight - window.innerHeight)) * 100;
+          scrollIndicator.style.width = scrolled + "%";
+        });
+      </script>
       <div class="header_button">
         <label class="hb_content">
           <input type="checkbox" id="headerResumeCheck" onclick="headerResume()">
