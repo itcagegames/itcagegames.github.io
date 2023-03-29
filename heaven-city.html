@@ -56,16 +56,26 @@
     }
   </script>
   <header class="header" id="header">
-    <a href="index.html">
-      <img class="header-logo" src="headerlogo.png" alt="Приветствую! Это Inside The Cage Игровой разработчик и издатель" class="header-logo-img">
-    </a>
-    <a href="#" class="header-link">НАЧАЛО</a>
-    <a href="#hc-intro" class="header-link">ИГРА</a>
-    <a href="#hc-trailer" class="header-link">ТРЕЙЛЕР</a>
-    <a href="#hc-art" class="header-link">АРТ</a>
-    <a href="#hc-contacts" class="header-link">КОНТАКТЫ</a>
-
+    <div class="header-panel">
+      <a href="index.html">
+        <img class="header-logo" src="headerlogo.png" alt="Приветствую! Это Inside The Cage Игровой разработчик и издатель" class="header-logo-img">
+      </a>
+      <!-- <a href="#" class="header-link">НАЧАЛО</a> -->
+      <a href="#hc-intro" class="header-link">ИГРА</a>
+      <a href="#hc-trailer" class="header-link">ТРЕЙЛЕР</a>
+      <a href="#hc-art" class="header-link">АРТ</a>
+      <a href="#hc-about" class="header-link">ОБ ИГРЕ</a>
+      <a href="#hc-contacts" class="header-link">КОНТАКТЫ</a>
+    </div>
+    <div class="scroll-indicator"></div>
   </header>
+  <script>
+    window.addEventListener("scroll", function () {
+      var scrollIndicator = document.querySelector(".scroll-indicator");
+      var scrolled = (window.scrollY / (document.body.offsetHeight - window.innerHeight)) * 100;
+      scrollIndicator.style.width = scrolled + "%";
+    });
+  </script>
   <div class="header_button">
     <label class="hb_content">
       <input type="checkbox" id="headerResumeCheck" onclick="headerResume()">
@@ -139,7 +149,29 @@
       </div>
     </div>
 
-    
+    <div class="article" id="hc-about">
+      <div class="artc-content">
+            <h2>Об Игре</h2>
+            <p>Heaven City - это текстовое приключение (текстовый квест или interactive fiction) в сеттинге киберпанка, постапокалипсиса, сюрреализма. Вам пригодится воображение, которое позволит "рендерить" всё происходящее в игре. В ней лишь будут наброски.</p>
+            <h3>Особенности игры:</h3>
+            <ol>
+              <li>Интригующий сюжет. Вас ждёт незабываемое приключение по заброшенному чудесному городу будущего, в котором когда-то царила жизнь. Вы должны узнать: как вы тут оказались и почему ничего не помните.</li>
+              <li>Неожиданные концовки. Выборы, которые вы будете делать во время прохождения, повлияют на концовку. В ней откроется вся правда.</li>
+              <li>Игра вдохновлена одним киберпанк sci-fi фильмом тоже с неожиданной концовкой.</li>
+              <li>Головоломки и испытания. Достичь правды и ответов на многие вопросы не так-то просто. Не так ли?</li>
+               <li>Прекрасный саундтрек не отвлекает от игры, придает особое настроение, добавляет новые ощущения и эмоции.</li>
+              <li>Насладитесь атмосферой заброшенного города! (Особенно если вы интроверт). Вы также побываете в разных локациях: от благоприятных до невероятно опасных, вроде заброшенной атомной электростанции с мутантами, радиацией, голограммами и т.д.</li>
+              <li>Поддерживаемые языки:
+                <ol class="artc-dots">
+                  <li>Английский</li>
+
+                  <li>Русский</li>
+                </ol></li>
+
+               <p>Язык меняется в настройках.</p>
+            </ol>
+       </div>
+    </div>  
 
       <div class="contacts" id="hc-contacts">
         <div class="section__header">
