@@ -16,7 +16,8 @@ a:visited {
 
 ::selection {
   /*    background: #89a1bf;*/
-  background: #f44336;
+  /*   background: #f44336; */
+  background: #4b4bad;
   text-shadow: none;
 }
 
