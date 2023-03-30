@@ -845,6 +845,7 @@ a:visited {
 
 .news-header h3 {
   /*                border-bottom: 12px solid #af1414; */
+  word-break: break-word;
   padding-bottom: 10px;
   width: 91%;
   max-width: 100%;
@@ -864,7 +865,8 @@ a:visited {
 }
 
 .news-header p {
-  width: 95%;
+  word-break: break-word;
+  width: 90%;
   max-width: 100%;
   font-family: "Montserrat";
   src: url(../fonts/Montserrat-Medium.ttf);
@@ -1503,13 +1505,13 @@ a:visited {
     border-bottom: 12px solid #af1414;
   }
 
-  .news h3 {
+  .news-header h3 {
     padding: 0px;
     padding-top: 28px;
     padding-left: 14px;
   }
 
-  .news p {
+  .news-header p {
     padding: 0px;
     padding-top: 21px;
     padding-left: 14px;
@@ -1733,11 +1735,11 @@ a:visited {
     height: auto;
   }
 
-  .news h3 {
+  .news-header h3 {
     font-size: 18px;
   }
 
-  .news p {
+  .news-header p {
     font-size: 12px;
   }
   
