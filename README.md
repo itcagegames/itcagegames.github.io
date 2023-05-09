@@ -7,7 +7,6 @@
 **License:**
   
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Cc_by-nc-nd_icon.svg/200px-Cc_by-nc-nd_icon.svg.png">
-But all images and information texts of games and logos of Inside The Cage Games have CC BY-NC-ND license
 
 **Contacts:**
 
