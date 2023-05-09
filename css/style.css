@@ -5,7 +5,7 @@
 }
 
 html {
-  background-color: #030303;
+  background-color: #080808;
 }
 
 a:focus,
@@ -651,12 +651,16 @@ a:visited {
 .hc-cover {
   padding-top: 100px;
   padding-bottom: 0px;
-  background: black;
+  background: #080808;
+  text-align: center;
+
 }
 
 .hc-cover img {
   height: 90%;
   width: 90%;
+  border-radius: 15px;
+  max-width: 1920px;
 }
 
 .hc-intro {
@@ -812,11 +816,13 @@ a:visited {
 }
 
 .hc-lart-item {
-  width: 89%;
+  width: 75%;
   height: auto;
   }
 
-  
+.hc-photo{
+margin-bottom: 90px;
+}  
 
 /*Blog | Inside The Cage Games*/
 .page-news {
@@ -892,7 +898,7 @@ a:visited {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+/*  min-height: 100vh;*/
   margin-bottom: 250px;
   text-align: center;
 }
@@ -994,6 +1000,17 @@ a:visited {
   line-height: 30px;
 
   color: #ffffff;
+}
+
+.artc-content a {
+  text-decoration: none;
+  color: red;
+  transition: all 0.3s ease-in-out;
+}
+
+.artc-content a:active, .artc-content a:focus, .artc-content a:hover {
+  text-decoration: none;
+  color: #ac000b;
 }
 
 .artc-dots {
