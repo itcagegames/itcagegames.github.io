@@ -653,13 +653,14 @@ a:visited {
   padding-bottom: 0px;
 /*  background: #080808;*/
   text-align: center;
-  border-bottom: 3px solid white;
+/*  border-bottom: 3px solid white;*/
 }
 
 .hc-cover img {
   height: auto;
   width: 100%;
   max-width: 1920px;
+  border-bottom: 6px solid white;
 }
 
 .hc-intro {
