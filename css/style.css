@@ -687,9 +687,9 @@ a:visited {
   text-align: center;
 }
 
-/*.hc-intro hr {
+.hc-intro hr {
   border: 3px solid white;
-}*/
+}
 
 .hc-button {
   text-align: center;
